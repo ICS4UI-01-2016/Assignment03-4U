@@ -1,0 +1,30 @@
+A3Q1:
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Linear Search: 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+ X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+     X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+             X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 O
+For linear search you would simply have code run through the entire 
+set of elements. While is is running through the code, it is checking
+the whether number within each index is 41. When 41 is found, the loop then stops.
+
+Binary Search:
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+23, 27, 30, 34, 41, 51, 55 | 57, 60, 67, 72, 78, 83, 96
+                              X
+23, 27, 30 | 34, 41, 51, 55 
+             X
+                 41 | 51, 55 
+                       X
+                 41 
+                 O
+For binary search, you would first divide the entire set of elements into half, 
+checking  
