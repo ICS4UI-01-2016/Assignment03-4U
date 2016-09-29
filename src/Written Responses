@@ -1,0 +1,9 @@
+A3Q1:
+    Linear search: {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}
+        is 41 in position 0 --> no --> run for loop again
+        is 41 in position 1 --> no --> run for loop again
+     is 41 in position 2 --> no --> run for loop again
+     is 41 in position 3 --> no --> run for loop again
+     is 41 in position 4 --> yes --> return 4
+
+    
