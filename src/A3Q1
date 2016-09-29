@@ -1,0 +1,88 @@
+Question: 
+
+Suppose an array called scores contains the elements 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+In an organized manner, trace the execution of Sequential Search and Binary Search Algorithms to search for the number 41
+
+Answer: 
+
+1. Sequential (Linear) Search
+
+    Code:
+    
+    public int linearSearch(int find, int[] a){
+       // start going through the array
+       for(int i = 0; i < a.length; i++){
+          // if we find the number, tell the user which spot
+          if(a[i] == find){
+             return i;
+          }
+       }
+       // send back -1 if we never found the item
+       return -1;
+    }
+
+    Execution:
+    
+    Linear Search   --> called
+    int find = 41       --> 41
+    int[] a = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}   --> array of numbers
+
+    loop 1:
+    i = 0           --> 0
+    i < a.length    --> 0 < 14     --> true
+    a[i] == find    --> 23 == 41   --> false
+
+    loop 2:
+    i++             --> 1
+    i < a.length    --> 1 < 14     --> true
+    a[i] == find    --> 27 == 41   --> false
+
+    loop 3:
+    i++             --> 2
+    i < a.length    --> 2 < 14     --> true
+    a[i] == find    --> 30 == 41   --> false
+
+    loop 4:
+    i++             --> 3
+    i < a.length    --> 3 < 14     --> true
+    a[i] == find    --> 34 == 41   --> false
+
+    loop 5:
+    i++             --> 4
+    i < a.length    --> 4 < 14     --> true
+    a[i] == find    --> 41 == 41   --> true
+
+    return i        --> 5
+
+2. Binary Search
+    Code:
+    
+    public int binarySearch(int find, int[] a, int start, int end){
+       // if we have come to the point where start > end, we cant find it
+       if(start > end){
+          return -1;
+       }
+       // calculate the middle number in the array
+       int mid = (end+start)/2;
+       // if we found it, return where it is
+       if(a[mid] == find){
+          return mid;
+       // if the number is smaller, look in the left half
+       }else if(find < a[mid]){
+          return binarySearch(find, a, start, mid-1);
+       // if the number is bigger, look to the right
+       }else{
+          return binarySearch(find, a, mid+1, end);
+       }
+    }
+
+    Execution:
+    
+    binarySearch    --> called
+    int find        --> 41
+    int[] a = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}   --> array of numbers
+    int start = 0   --> 0
+    int end         --> 13
+    
+    start > end
+    
