@@ -78,11 +78,36 @@ Answer:
 
     Execution:
     
-    binarySearch    --> called
-    int find        --> 41
+    binarySearch        --> called
+    int find            --> 41
     int[] a = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}   --> array of numbers
-    int start = 0   --> 0
-    int end         --> 13
+    int start = 0       --> 0
+    int end             --> 13
     
-    start > end
+    loop 1:
+    start > end     --> 0 > 14                 --> false
+    int mid = (end+start)/2                    --> 7    
+    a[mid] == find  --> 57 == 41               --> false
+    find < a[mid]   --> 41 < 57                --> true
+    return binarySearch(find, a, start, mid-1) --> recurse(41, array, 0, 6)
+
+    loop 2:
+    start > end     --> 0 > 6                  --> false
+    int mid = (end+start)/2                    --> 3    
+    a[mid] == find  --> 34 == 41               --> false
+    find < a[mid]   --> 41 < 34                --> false
+    return binarySearch(find, a, mid+1, end)   --> recurse(41, array, 4, 6)
+
+    loop 3:
+    start > end     --> 4 > 6                   --> false
+    int mid = (end+start)/2                     --> 5    
+    a[mid] == find  --> 51 == 41                --> false
+    find < a[mid]   --> 41 < 51                 --> true
+    return binarySearch(find, a, start, mid-1)  --> recurse(41, array, 4, 5)
+
+    loop 4:
+    start > end     --> 4 > 5                   --> false
+    int mid = (end+start)/2                     --> 4    
+    a[mid] == find  --> 41 == 41                --> true
+    return mid                                  --> 4
     

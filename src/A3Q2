@@ -1,0 +1,54 @@
+Question: 
+
+Trace through the execution of Bubble Sort as it sorts through the following 
+array in ascending order:  25  30  20  80  40  60
+
+Answer: 
+
+Bubble Sort:
+    
+    Code:
+
+    public void bubbleSort(int[] n){
+       boolean swapped = false;
+       int = n.length();
+       do{
+          swapped = false;
+          for(int i = 0; i < end; i++){
+             if(n[i] > n[i+1]){
+                int temp = n[i];
+                n[i] = n[i+1];
+                n[i+1] = temp;
+                swapped = true;
+             }
+          }
+       }while(swapped);
+    }
+
+    Execution: 
+
+    bubbleSort                         --> called
+    int[] n                            --> {25, 30, 20, 80, 40, 60}
+    
+    boolean swapped = false            --> false
+    
+    loop 1.1:
+    swapped = false                    --> false
+    
+        loop 2.1:
+        int i = 0                      --> 0
+        i < end  --> 0 < 6             --> true
+        i++                            --> 1
+
+        n[i] > n[i+1]  --> 25 > 30     --> false
+
+        loop 2.2:
+        int i = 0                      --> 0
+        i < end  --> 0 < 6             --> true
+        i++                            --> 2
+
+        n[i] > n[i+1]  --> 30 > 20     --> true
+        int temp = n[i]                --> 30
+        n[i] = n[i+1]                  --> 20
+        n[i+1] = temp                  --> 30
+        swapped true                   --> true
