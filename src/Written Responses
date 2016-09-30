@@ -1,9 +1,17 @@
-A3Q1:
+A3Q1:   {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96} 
     Linear search: {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}
-        is 41 in position 0 --> no --> run for loop again
-        is 41 in position 1 --> no --> run for loop again
-     is 41 in position 2 --> no --> run for loop again
-     is 41 in position 3 --> no --> run for loop again
-     is 41 in position 4 --> yes --> return 4
+        is 41 in position 0 -> no -> run for loop again
+        is 41 in position 1 -> no -> run for loop again
+        is 41 in position 2 -> no -> run for loop again
+        is 41 in position 3 -> no -> run for loop again
+        is 41 in position 4 -> yes -> return 4
 
-    
+    Binary Search:
+        Find the middle of the list -> is it 41 -> no -> is 41 smaller than the middle -> yes -> recursion with the end int being 1 smaller than the middle
+        Find the middle of the list -> is it 41 -> no -> is 41 smaller than the middle -> no -> recursion with the start int being 1 larger than the middle
+        Find the middle of the list -> is it 41 -> no -> is 41 smaller than the middle -> no -> recursion with the start int being 1 larger than the middle
+        Find the middle of the list -> is it 41 -> no -> is 41 smaller than the middle -> yes -> return 4
+
+A3Q2:   {25  30  20  80  40  60}
+    Bubble sort:
+        
