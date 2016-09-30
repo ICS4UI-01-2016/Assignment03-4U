@@ -30,6 +30,44 @@ Question 2 ... Let's sort numbers from least to highest .. USING BUBBLE SORT
                 x
 4) 25, 20, 30, 40, 80, 60
                     x
-5) 
- 
-                        
+5) 25, 20, 30, 40, 60, 80
+                        x
+6) 20, 25, 30, 40, 60, 80
+    x
+checks it again to verify everything is in ORDER
+7) 20, 25, 30, 40, 60, 80
+        x
+8) 20, 25, 30, 40, 60, 80
+            x
+9) 20, 25, 30, 40, 60, 80
+                x
+10) 20, 25, 30, 40, 60, 80
+                     x
+11) 20, 25, 30, 40, 60, 80
+                         ✔
+
+Question 3 Find the max amount of switches needed for a binary search containing 7 numbers
+33, 54, 21, 67, 47, 11, 53
+
+It would take approximately 3 steps, Let's search for 53 :) as an example 
+
+0) 33, 54, 21, 67, 47, 11, 53
+               x
+1) 47, 11, 53
+        x
+2) 53         
+    ✔
+Question 4 Which one is faster ? 
+Selection sorting is little faster because insertion is only useful with smaller groups. 
+Selection sorting would take a number and place it where it is suppose to be.
+That number will no longer be scanned for as it is now "sorted".
+While insertion would go through every single number within a given series of numbers, 
+and since this is a big series of numbers, we would have to go through the numbers we "sorted".
+
+Question 5
+Binary search is the most efficient in terms of Big O as it 
+
+
+
+
+          
