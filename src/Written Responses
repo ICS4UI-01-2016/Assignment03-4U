@@ -27,4 +27,56 @@ Binary Search:
                  41 
                  O
 For binary search, you would first divide the entire set of elements into half, 
-checking  
+checking if the number is less than where the split has occurred. Now you
+
+
+
+A3Q2:
+Bubble sorting:
+For bubble sorting, the numbers essentially check if one is greater than or less than another number, moving 
+left to right. The numbers than switch index's if one if greater (left) than the other (right). The sorting
+method has already gone through the first two numbers (25, 30) and realized that their positions are correct. 
+25  30  20  80  40  60  (Starting set of numbers)
+
+25  30  20  80  40  60  (1)  
+X   X   X   X   X   X   
+
+25  30  20  80  40  60  (2)
+✔     ><    X   X   X   
+    SWITCH!
+
+25  20  30  80  40  60  (3)
+✔   ✔  ✔   X   X   X
+
+25  20  30  80  40  60  (4)
+X   X  ✔     ><    X   
+            SWITCH
+25  20  30  40  80  60  (5)
+X   X  ✔   ✔    ><
+                SWITCH
+25  20  30  40  60  80  (6)
+X   X  ✔   ✔   ✔  ✔    
+                
+25  20  30  40  60  80  (7)
+  ><    ✔   ✔  ✔   ✔
+SWITCH
+20  25  30  40  60  80  (8)
+✔   ✔  ✔   ✔  ✔   ✔
+
+(2) When the method goes through to find 30 and 20 in the incorrect positions, the method switches the two
+numbers around so that the lower value (20) is found in index 1 and the larger value (30) is found in index
+2.  
+(3) The method than goes through next numbers, which are 30 and 80. Since both of these numbers are in the 
+correct order but in the incorrect index, the method then goes to the next set of number which are 80 and 40.
+
+(4)It then realizes that both 80 and 40 are in the incorrect order, therefore they become switches, 40 is then
+in the index of 3 and 80 is found in the index of 4. 
+ 
+(5)Then, the method looks at the last set of numbers, 80 and 60. It notices that they are in
+incorrect order, therfore they become switched, making 60 have an index value of 4 and making 80 have an index value
+of 5.  
+
+(7)Lastly,
+
+(8) Final result 
+
