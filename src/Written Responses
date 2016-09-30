@@ -1,0 +1,101 @@
+Question #1
+
+Linear Search
+
+set number to find to 41
+
+start from the left most number, and ask if the number selected(*) is equal to 41
+if the selected number is not equal to 41, then select the next number to the immediate
+right
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+*
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 !
+when the number selected is equal to 41, then return the position at which the number 41 was found(in this case it would be 4)
+
+end
+
+
+Binary Search
+
+divide the list of numbers in half to find the "middle" number, then check if the middle number is actually 
+the number we want to find(41). If not, then check if the number(41) is bigger than or smaller than the middle number.
+if it is bigger, then remove the lower half of the numbers in the list, and remove the upper half of the numbers in the list
+if it is smaller.
+
+
+23, 27, 30, 34, 41, 51, 55 || 57, 60, 67, 72, 78, 83, 96||
+                        *
+
+23, 27, 30, 34,|| 41, 51, 55||
+            *   
+
+41, ||51, 55|| 
+      *
+      
+41
+!
+
+when the number selected is equal to 41, then return the position at which the number was found
+
+
+
+Question #2
+
+Bubble sort
+look at first 2 numbers(from the left) in spots 1 and 2 and check which value is bigger. if the 1st number is bigger then 
+switch the positions of the 2 numbers. Then proceed to increase the spots looked at by one, so the next spots would be 2 and 3.
+again if the 1st number is bigger, then we switch the 2 numbers. Keep repeating this until you reach the end, and then start over 
+from the left side again. when you go through the entire set of numbers without switching anything, end the code
+
+25, 30, 20, 80, 40, 60
+*    *
+
+25, 30, 20, 80, 40, 60
+     !    !
+Switch!
+
+25, 20, 30, 80, 40, 60
+        *   *
+
+25, 20, 30, 80, 40, 60
+            !   !
+Switch!
+
+25, 20, 30, 40, 80, 60
+                !   !
+Switch!
+
+25, 20, 30, 40, 60, 80
+!   !
+Switch!
+
+20, 25, 30, 40, 60, 80
+    *   *
+
+20, 25, 30, 40, 60, 80
+        *   *
+
+20, 25, 30, 40, 60, 80
+            *   *
+
+20, 25, 30, 40, 60, 80
+                *   *
+
+The program would then proceed to recheck all the numbers once more fromm left to right to make sure they are all in order.
+if all numbers are in order then the program ends.
+
+
+Question #3
+1 2 3 4 5 6 7
