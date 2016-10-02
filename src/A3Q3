@@ -1,0 +1,41 @@
+Question: 
+
+What is the maximum number of comparisons that might be required to perform a binary 
+search on a list containing seven items? Explain the situation and include an example of such a list and search.
+
+Answer: 
+
+The maximum number of comparisons that might be required to perform a binary search on a list containing seven items is 3.
+This is because the search starts off by cutting the array in half initially looking at the 3rd position. If thats not the number it will 
+determine which group of positions to choose next based on how large the number is relative to the value of position three 0, 1, 2 or 4, 5, 6.
+After that no matter which side it chooses it will divide that half, but first checking the middle position (either 1 or 5). Furthermore, if the comparison of that
+value is not equal to the one it is looking for, it will choose between the final two positions based on how large the number is relative to the last number compared (either 0 or 2 / 4 or 6).
+Finally, it has brought it down to one possible position that it can be in, therefore giving a total of 3 comparisons. (Refer to examples below)
+
+0, 1, 2, 3, 4, 5, 6
+         c
+0, 1, 2, 3, 4, 5, 6
+   c     x  x  x  x
+0, 1, 2, 3, 4, 5, 6
+c  x  x  x  x  x  x
+
+0, 1, 2, 3, 4, 5, 6
+         c
+0, 1, 2, 3, 4, 5, 6
+x  x  x  x     c
+0, 1, 2, 3, 4, 5, 6
+x  x  x  x  x  x  c
+
+0, 1, 2, 3, 4, 5, 6
+         c
+0, 1, 2, 3, 4, 5, 6
+    c    x  x  x  x     
+0, 1, 2, 3, 4, 5, 6
+x  x  c  x  x  x  x
+
+0, 1, 2, 3, 4, 5, 6
+         c
+0, 1, 2, 3, 4, 5, 6
+x  x  x  x     c
+0, 1, 2, 3, 4, 5, 6
+x  x  x  x  c  x  x
