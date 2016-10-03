@@ -1,0 +1,4 @@
+1) 15, 17, 18, '19', 26, 28, 46
+2) 15, '17', 18 or 26, '28', 46
+3) '15' or '18' or '26' or '46'
+the maximum number of comparisons is 3
