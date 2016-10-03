@@ -76,7 +76,31 @@ in the index of 3 and 80 is found in the index of 4.
 incorrect order, therfore they become switched, making 60 have an index value of 4 and making 80 have an index value
 of 5.  
 
-(7)Lastly,
+(7)Lastly, the loop then goes to the front of the set of elements and runs through again. It notices that 25 and 20 are in 
+the incorrect order of index, therefore they become switched.
 
 (8) Final result 
 
+A3Q3:
+What is the number of steps it will take to find a specific number with a list containing 7 items?
+EXAMPLE:
+LOOKING FOR THE NUMBER 3!
+2  3  4  1  5  7  6
+
+2  3  4  1 | 5  7  6
+             GET RID OF!
+2  3  4  1 == NEW SET OF ELEMENTS
+
+2  3 | 4  1 
+      GET RID OF!
+2  3 == NEW SET OF ELEMENTS
+  
+2 | 3
+GET RID OF 2! FOUND 3!
+    3 == Therefore 3 is in the index of 1!
+
+Therefore the maximum number of comparisons to perform a binary search on a list containing seven items is 3! 
+The answer is three because after the 3rd step, it is impossible to proceed with the same loop since the answer
+is found! ADD MORE TO THE EXPLANATION!
+
+A3Q4:
