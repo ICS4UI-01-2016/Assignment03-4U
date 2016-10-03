@@ -65,7 +65,9 @@ While insertion would go through every single number within a given series of nu
 and since this is a big series of numbers, we would have to go through the numbers we "sorted".
 
 Question 5
-Binary search is the most efficient in terms of Big O as it 
+Binary search is the most efficient in terms of Big O would be O(log n), the common name is logarithmic time.
+Essentially this method would divide the series of numbers by half every time rather than looking
+through 
 
 
 
