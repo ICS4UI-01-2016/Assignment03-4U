@@ -104,3 +104,7 @@ The answer is three because after the 3rd step, it is impossible to proceed with
 is found! ADD MORE TO THE EXPLANATION!
 
 A3Q4:
+In the worst case, insertion sort would be slower than selection sort. This is true due to the fact that the insertion
+sorting method has to go through the numbers twice. In insertion sort, the method goes through every index even through
+the ones which are sorted already. Insertion sort is essentially doing more work that is "unnecessary" compared to 
+selection sort. 
