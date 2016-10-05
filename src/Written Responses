@@ -1,0 +1,38 @@
+Question 1:
+
+Sequential Search
+- These are the numbers in the array
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program will the go through each number in the array until it finds the target number
+27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program has then found the target number and the spot it is in in the array
+
+Binary Search
+- These are the numbers in the array
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program will first look at the number in the middle (14/2 = 7), so the 7th number
+23, 27, 30, 34, 41, 51, 55, "57", 60, 67, 72, 78, 83, 96
+(00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13)
+
+- Since the target number is smaller than that, it will do the search again in 
+the earlier half of the array, taking out the middle number
+23, 27, 30, 34, 41, 51, 55
+
+- The program will then conduct the same search with those numbers and find the middle number
+- Since the target number is higher than the current middle one, the program will conduct the search
+again between the new restrictions
+41, 51, 55
+
+- After the search is conducted again with those three numbers, it will identify
+that there is only one spot in the array that it has not ruled out. This will be 
+the target number. It will then return the position it has in the array
+
+Question 2:
+
+
