@@ -34,5 +34,58 @@ that there is only one spot in the array that it has not ruled out. This will be
 the target number. It will then return the position it has in the array
 
 Question 2:
+- The array is entered into the program
+ 25  30  20  80  40  60
 
+- The program with then compare the first two numbers in the array to see which 
+one is larger
+ "25  30"  20  80  40  60
+
+- Since the second number is larger, the numbers stay in their original position.
+
+- The program will then compare the previous larger number (30), and the next
+number in the array
+ 25  "30  20"  80  40  60
+
+- Since the first number is larger, these two numbers will switch positions
+ 25  "30  20"  80  40  60
+ 25  "20  30"  80  40  60
+
+- When the program reaches, the end of the array, it will go through the cycle again
+
+- The program will then continue this process until it can't swap number 
+positions anymore (numbers are in least to greatest order)
+ 25  20  30  "80  40"  60
+ 25  20  30  40  "80  60"
+ "25  20"  30  40  60  80
+ 20  25  30  80  40  60
+
+Question 3:
+- Binary search takes the middle number and compares it to the target number
+
+- There are seven numbers, one of them being the target number. For this example,
+let's assume that the numbers scale from 1 to 7
+ 1  2  3  4  5  6  7
+Also, lets assume our target number is 3
+ 1  2  "3"  4  5  6  7
+
+- Since we are using binary search, the program will immediately start looking
+from the middle number, which in this case is 4
+ 1  2  3  "4"  5  6  7
+
+- Our target number is less than the middle number, so the program will then
+take every number less than the middle number (4) and conduct the same search.
+ 1  2  3
+
+- It will then take the middle number again (2) and see if it is the target number.
+ 1  "2"  3
+
+- Since it isn't, There is only one number left that can possible be the answer.
+ 3
+
+- This leaves the program only needing two comparisons to find the target number
+for seven numbers in the array.
+
+Question 4:
+No, it is not faster because selection sort will  
 
