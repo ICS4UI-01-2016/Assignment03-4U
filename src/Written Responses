@@ -13,5 +13,19 @@ A3Q1:   {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}
         Find the middle of the list -> is it 41 -> no -> is 41 smaller than the middle -> yes -> return 4
 
 A3Q2:   {25  30  20  80  40  60}
-    Bubble sort:
+    Bubble sort: 
+        Boolean swapped has not been swapped -> keep Boolean swapped false -> run for loop b/c 0 is smaller than 6 -> is 25 larger than 30 -> no -> don't swap
+        i is now 1 -> is 30 larger than 20 -> yes -> temp is now 1 -> place 1 is now 20 -> place 2 is now 30 -> swapped is now true
+        i is now 2 -> is 30 larger than 80 -> no -> don't swap
+        i is now 3 -> is 80 larger than 40 -> yes -> temp is now 3 -> place 3 is now 40 -> place 4 is now 80 -> swapped is now true
+        i is now 4 -> is 80 larger than 60 -> yes -> temp is now 4 -> place 4 is now 60 -> place 5 is now 80 -> swapped is now true
+        run for loop again b/c swapped is true -> i is now 0 -> is 25 larger than 20 -> yes -> place 0 is now 20 -> place 1 is now 25 -> swapped is now true
+        i is now 1 -> is 25 larger than 30 -> no -> don't swap
+        i is now 2 -> is 30 larger than 40 -> no -> don't swap
+        i is now 3 -> is 40 larger than 60 -> no -> don't swap
+        i is now 4 -> is 60 larger than 80 -> no -> don't swap
+        swapped is false -> end program
+
+A3Q3:   {0, 1, 2, 3, 4, 5, 6}
+    Binary search:   Looking for 6
         
