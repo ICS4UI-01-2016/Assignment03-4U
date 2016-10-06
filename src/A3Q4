@@ -1,0 +1,18 @@
+Question: 
+
+For large arrays, in the worst case, is selection sort faster than insertion sort? Explain.
+
+Answer:
+
+For large arrays that are in the worst case, selection sort and insertion sort will 
+preform equally. However given the option of choosing between the two in this case, 
+selection sort would be "faster". I believe this because through the code of selection sort
+it looks for the smallest (or largest depending on which way you want to sort), 
+and places it in the correct position. Then it repeats this process until it has reached 
+the end of the numbers to sort. Therefore, selection sort will only have to make
+the minimum amount of transitions, placing it in the proper place right away. 
+Whereas, insertion sort will sort the array one number at a time. 
+It essentially picks up the number and shuffles it down the array until it finds 
+the appropriate spot in the array. This means that this type of array will 
+constantly swap the numbers making a large amount of transitions to the array, not
+always placing it in the right position right away.
