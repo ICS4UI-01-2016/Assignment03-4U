@@ -104,7 +104,11 @@ The answer is three because after the 3rd step, it is impossible to proceed with
 is found! ADD MORE TO THE EXPLANATION!
 
 A3Q4:
-In the worst case, insertion sort would be slower than selection sort. This is true due to the fact that the insertion
-sorting method has to go through the numbers twice. In insertion sort, the method goes through every index even through
-the ones which are sorted already. Insertion sort is essentially doing more work that is "unnecessary" compared to 
+In the worst case, selection sort would be quicker than insertion sort. This is true due to the fact that the insertion
+sorting method has to go through the numbers twice due to the method's way of working, swapping. 
+In insertion sort, the method goes through every index even through the ones which are sorted already. 
+Insertion sort is essentially doing more work that is "unnecessary" compared to 
 selection sort. 
+
+** Insertion sort can be n number of swaps depending on the amount of elements within an array, therefore insertion sort
+would then take a longer time to sort compared to selection sort. Because of this reason I believe that 
