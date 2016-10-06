@@ -59,16 +59,20 @@ It would take approximately 3 steps, Let's search for 53 :) as an example
     ✔
 Question 4 Which one is faster ? 
 Selection sorting is little faster because insertion is only useful with smaller groups. 
-Selection sorting would take a number and place it where it is suppose to be.
+In terms of amount of swaps, Selection is little more efficient.
+Selection sorting would take a number and place it where it is suppose to be. 
 That number will no longer be scanned for as it is now "sorted".
 While insertion would go through every single number within a given series of numbers, 
 and since this is a big series of numbers, we would have to go through the numbers we "sorted".
+
+In the worst case scenario, they are both equally 
 
 Question 5
 Binary search is the most efficient in terms of Big O, since it would be O(log n), the common name is logarithmic time.
 Essentially this method would divide the series of numbers by half every time rather than looking
 through every number from beginning to end. When you divide a number, you're essentially cutting down
 the amount of numbers you're sorting through. 
+
 
  
 
