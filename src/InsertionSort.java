@@ -14,21 +14,27 @@ public class InsertionSort {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Set of numbers 
          int n[] = new int[5];
          n[0] = 0;
          n[1] = 2;
-         n[2] = 4;
+         n[2] = 43;
          n[3] = 5;
-         n[4] = 10;
+         n[4] = 77;
      
+         //initializer for calling a method 
          InsertionSort test = new InsertionSort();
-         for(int i = 0; i < 5; i++){
-  
+         
+         // a loop that spits out all numbers sorted 
+         for(int i = 0; i < n.length; i++){
+             //calls the method
          test.insertionsSort(n);
+         //prints out all the numbers
              System.out.println(n[i]);
          }
     }
     
+    //insertionSort method 
     public void insertionsSort(int[]n){
          for(int i = 1; i < n.length; i++)
    {
