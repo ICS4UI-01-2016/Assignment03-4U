@@ -18,20 +18,30 @@ public class Problem1 {
     
     public int[] revInsert(int[] numbers){
         int[] awnser = new int[numbers.length];
+        for(int i=0; i<numbers.length;i++){
+            awnser[i]= -2147483648;
+        }
+        boolean placed = false;
         //do for every number
-        for(int i=1; i<numbers.length;i++){
+        for(int currentUnsorted=0; currentUnsorted<numbers.length;currentUnsorted++){
             //check to the sorted array
-            for(int n=0; n<awnser.length;n++){
+            for(int awnserCheckPostion=0; awnserCheckPostion<awnser.length && !placed ;awnserCheckPostion++){
                 //
-                if(numbers[i]>awnser[n]){
+                if(numbers[currentUnsorted]>awnser[awnserCheckPostion]){
                     //move numbers in array over to make room
-                    for(int x = awnser.length; x<n; x--){
-                        awnser[x-1] = awnser[x-2];
+                    for(int shiftPos = currentUnsorted; shiftPos>awnserCheckPostion; shiftPos--){
+                        if(shiftPos!=0){
+                            awnser[shiftPos] = awnser[shiftPos-1];
+                        } else {
+                            
+                        }
                     }
                     //insert number in array
-                    awnser[n] = numbers[i];
+                    awnser[awnserCheckPostion] = numbers[currentUnsorted];
+                    placed = true;
                 }
             }
+            placed = false;
         }
         return awnser;
     }
@@ -39,10 +49,14 @@ public class Problem1 {
     public static void main(String[] args) {
         Problem1 test = new Problem1();
         Scanner in = new Scanner(System.in);
-        int[] input = {in.nextInt(),in.nextInt(),in.nextInt(),in.nextInt(),in.nextInt()};
-        int[] done = new int[];
+        int numOfNumbers = in.nextInt();
+        int[] input = new int[numOfNumbers];
+        for(int i=0; i<numOfNumbers; i++){
+            input[i] = in.nextInt();
+        }
+        int[] done = new int[numOfNumbers];
         done = test.revInsert(input);
-        for(int i=0; i<5; i++){
+        for(int i=0; i<numOfNumbers; i++){
             System.out.println(done[i]);
         }
         
