@@ -9,9 +9,6 @@
  */
 public class A3Q6 {
 
-    /**
-     * @param args the command line arguments
-     */
     public void insertionSort(int[] n) {
         for (int i = 1; i < n.length; i++) {
             int j = i;
@@ -23,4 +20,13 @@ public class A3Q6 {
             }
         }
     }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Test
+        A3Q6 test = new A3Q6();
+        //System.out.println(test.insertionSort());
+    }
 }
+

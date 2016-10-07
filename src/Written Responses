@@ -28,4 +28,8 @@ A3Q2:   {25  30  20  80  40  60}
 
 A3Q3:   {0, 1, 2, 3, 4, 5, 6}
     Binary search:   Looking for 6
-        
+        start is not larger than end -> mid is now 3 -> mid does not equal 3 -> 6 is not smaller than mid -> recursion with {4, 5, 6}
+        start is not larger than end -> mid is now 5 -> mid does not equal 5 -> 6 is not smaller than mid -> recursion with {6}
+        start is not larger than end -> mid is now 6 -> mid equals 6 -> return 6
+
+A3Q4:   
