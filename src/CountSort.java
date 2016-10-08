@@ -1,6 +1,4 @@
 
-import java.util.Arrays;
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -17,13 +15,13 @@ public class CountSort {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] n = {56,56,56,3,43,72,0};
+        int[] n = {56,65,44,65,98,44};
         CountSort test = new CountSort();
         
-        for (int i = 0; i < n.length; i++) {
+     
               test.countSort(n);
-        System.out.println(n[i]);
-        }
+        
+        
       
         
     }
@@ -37,17 +35,19 @@ public class CountSort {
            
             
             
-             for (int j = 0; j < 10; j++) {
+             for (int j = 0; j < 1; j++) {
              tracker[number]++;
-  
         }
              
             }
-        for (int j = 0; j < tracker.length; j = j + 1) {
-                 System.out.println("Number " + j + " and " + tracker[j]);  
-        while( == true){
-           
-        }
+        
+        
+        for (int j = 0; j < tracker.length; j++) {
+            if(tracker[j] != 0){
+                 System.out.println("Number " + j + " and " + tracker[j]);
+                 
+            }
     }
+    
 }
 }
