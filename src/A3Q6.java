@@ -12,7 +12,7 @@ public class A3Q6 {
     public void insertionSort(int[] n) {
         for (int i = 1; i < n.length; i++) {
             int j = i;
-            while (j > 0 && n[j - 1] > n[j]) {
+            while (j > 0 && n[j - 1] < n[j]) {
                 int temp = n[j];
                 n[j] = n[j - 1];
                 n[j - 1] = temp;
@@ -26,7 +26,7 @@ public class A3Q6 {
     public static void main(String[] args) {
         // Test
         A3Q6 test = new A3Q6();
-        //System.out.println(test.insertionSort());
+        
     }
 }
 
