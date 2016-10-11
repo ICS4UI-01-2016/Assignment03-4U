@@ -131,7 +131,9 @@ A3Q6: Found within the Java Class Main file named ProgrammingExercises.java!
 A3Q7: Counting sort is not as useful as any other algorithm due to the fact that it slacks efficiency! This sorting method first must find the amount
       of elements that have the same value and then store them. After this is finished, the new indexes have to add up together. Then for the final product, the 
       numbers which have added indexes together, go back and relate themselves to the first set of number's indexes and look to the added index and what ever number they 
-      contain is where that specific number is sorted for the final result. (https://www.youtube.com/watch?v=zhDmVF_NdjM)
+      contain is where that specific number is sorted for the final result. (https://www.youtube.com/watch?v=zhDmVF_NdjM). Also, for general searching, this algorithm is not
+      great due to the fact the tracker array would rather be inefficient when sorting words when all you can simply do is program to find a certain letter
+      within a certain index.
 A3Q8: Found within the Java Class Main file named ProgrammingExercises.java!
 
 

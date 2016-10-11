@@ -15,36 +15,37 @@ public class ProgrammingExcercises {
     public static void main(String[] args) {
         ProgrammingExcercises test = new ProgrammingExcercises();
         // Create an array containing 10 elements 
-        int[] n = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] numList = {10, 9, 8, 10, 6, 5, 4, 3, 2, 1, 0, 13, 15, 13, 3, 4, 23, 5, 6};
 
-        // Question 6
+        // Print out Question 6
         System.out.println("Question 6:");
-        // Print the method named insertionSort
-        test.countingSort(n);
         // Printing the elements individually 
-        for (int x = 0; x < n.length; x++) {
-            System.out.println(n[x]);
+        for (int i = 0; i < numList.length; i++) {
+            test.insertionSort(numList);
+            System.out.println(numList[i]);
         }
 
-        // Question 7
+        // Print out Question 7
         System.out.println("Question 7:");
-        test.countingSort(n);
-        for (int x = 0; x < n.length; x++) {
-            System.out.println(n[x]);
+        for (int i = 0; i < numList.length; i++) {
+            test.countingSort(numList);
+            System.out.println(numList[i]);
         }
 
-        // Question 8
+        // Print out Question 8
     }
 
     // Question 6
     public void insertionSort(int[] n) {
-        // Runs throught the position of the array
+        // Runs throught the positions of the array
         for (int i = 0; i < n.length; i++) {
             // Start at whatever i value and continues decreasing until the set of elements is sorted properly
+            // Create a new intereger and set it equal to i
             int j = i;
-            // While the number n[j - 1] is less than n[j]
+            // If the element is greater than 0 and the smaller element is found before the bigger element, it is ok
+            // If not, then the elements switch
             while (j > 0 && n[j - 1] < n[j]) {
-                // Swtich the integers
+                // Swtich the integers to arrange them in decreasing order
                 int temp = n[j];
                 n[j] = n[j - 1];
                 n[j - 1] = temp;
@@ -63,17 +64,18 @@ public class ProgrammingExcercises {
             // For every spot in the array, the spot in the tracker array that corresponds to the number n[i] is increased by 1
             tracker[n[i]]++;
         }
-        // Create a new integer 
+        // Create a new integer and set it to 0, allowing it to be used in the second set of numbers
         int x = 0;
+        // Have a for loop go through the second set of numbers!
         for (int i = 0; i < tracker.length; i++) {
             // If the tracker array number is not equal to zero, have a for loop go through the entire array with the integer x involved and then sort!
-            if (tracker[i] != 0) {
-                // The amount of time the number at x is used
-                for (int y = 0; y < tracker[x]; y++) {
-                    // Sort the array
-                    n[x] = i;
-                    x++;
-                }
+            while (tracker[i] != 0) {
+                // Sort the array
+                // Connecting the first set of elements to the second elements 
+                n[x] = i;
+                x++;
+                // Subtract 1 from that certain element each time the loop goes through the second set of numbers
+                tracker[i]--;
             }
         }
     }
