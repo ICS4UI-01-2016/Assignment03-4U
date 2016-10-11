@@ -1,6 +1,7 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Write the Java method for Counting Sort that will take an array as a parameter 
+ * and sort it using this method of sorting. 
+ * We will assume that only the numbers from 0 to 100 will be in the array. 
  */
 
 /**
@@ -24,14 +25,20 @@ public class A3Q7 {
         
         int spotInArray = 0;
         
-        for(int num = 0; num < tracker.length; num++){
-            int amountOfNum = tracker[num];
+        for(int spotInTracker = 0; spotInTracker < tracker.length; spotInTracker++){
+            
+            int amountOfNum = tracker[spotInTracker];
             
             if (amountOfNum != 0) {
                 
                 for (int i = 0; i < amountOfNum; i++) {
-                    n[spotInArray] = num;
+                    n[spotInArray] = spotInTracker;
                     spotInArray ++;
+                    System.out.println("spotInTracker: " + spotInTracker);
+                    System.out.println("spotInArray: " + spotInArray);
+                    System.out.println("i: " + i);
+                    System.out.println("amountOfNum: " + amountOfNum);
+                    System.out.println(" ");
                 }
             }
         }
