@@ -4,3 +4,11 @@ What is the best Big O value that any search algorithm can be? Explain.
 
 Answer:
 
+The best Big O value that any search algorithm can be is O(log n) (Logarithmic time),
+which is Binary Search. What this code basically does it constantly cuts the
+length of the array in half checking the middle number every time and chooses the next half
+to search depending on how large the number is relative to the previous one checked. 
+By doing this you are essentially getting rid of half the numbers each time that
+one doesn't need to check. This is obviously better than sequential search O(n) (linear time),
+which starts at the begging and moves down the array one at a time checking. This is why
+the best Big O value that algorithms can be is O(log n).

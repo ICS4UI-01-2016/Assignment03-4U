@@ -14,16 +14,35 @@ public class A3Q7 {
      */
     
     public void countingSort(int[] n){
-        for(int i = 1; i < n.length; i++)
-       {
-           int j = i;
-       }
+        int count = 0;
+        int [] tracker = new int [101];
+        
+        for(int i = 0; i < n.length; i++){
+           count = n[i];
+           tracker[count] ++;
+        }
+        
+        int spotInArray = 0;
+        
+        for(int num = 0; num < tracker.length; num++){
+            int amountOfNum = tracker[num];
+            
+            if (amountOfNum != 0) {
+                
+                for (int i = 0; i < amountOfNum; i++) {
+                    n[spotInArray] = num;
+                    spotInArray ++;
+                }
+            }
+        }
     }
     
     public static void main(String[] args) {
         A3Q7 test = new A3Q7();
         int [] n = {2, 2, 3, 3, 1, 1, 4, 4, 5, 5};
         test.countingSort(n);
-        System.out.println(n[0] + "," + n[1] + "," + n[2] + "," + n[3] + "," + n[4] + "," + n[5] + "," + n[6] + "," + n[7] + "," + n[8] + "," + n[9]);
+        for(int i = 0; i < n.length; i ++){
+            System.out.print(n[i] + " ");
+        }
     }
 }

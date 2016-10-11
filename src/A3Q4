@@ -10,9 +10,12 @@ selection sort would be "faster". I believe this because through the code of sel
 it looks for the smallest (or largest depending on which way you want to sort), 
 and places it in the correct position. Then it repeats this process until it has reached 
 the end of the numbers to sort. Therefore, selection sort will only have to make
-the minimum amount of transitions, placing it in the proper place right away. 
+the minimum amount of swaps, placing it in the proper place right away and going through the array only once. 
 Whereas, insertion sort will sort the array one number at a time. 
 It essentially picks up the number and shuffles it down the array until it finds 
 the appropriate spot in the array. This means that this type of array will 
 constantly swap the numbers making a large amount of transitions to the array, not
-always placing it in the right position right away.
+always placing it in the right position right away and going through the array more than once.
+For example, as it has to constantly swap one by one the lowest number that is at the end back to the front.
+This is why I believe selection sort would be faster than insertion sort.
+
