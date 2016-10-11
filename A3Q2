@@ -1,0 +1,18 @@
+1) 25  30  20  80  40  60
+2) 25  20  30  80  40  60
+    25 'checks' to see if 30 is smaller than it
+    30 is larger than 25, so 25 and 30 'stay put'
+    30 'checks' to see if 20 is smaller than it
+    20 is smaller than 30, so 30 and 20 'swap places'
+3) 25  20  30  40  80  60
+    30 'checks' to see if 80 is smaller than it
+    80 is larger than 30, so 30 and 80 'stay put'
+    80 'checks' to see if 40 is smaller than it
+    40 is smaller than 80, so 80 and 40 'swap places'
+4) 25  20  30  40  60  80
+    80 'checks' to see if 60 is smaller than it
+    60 is smaller than 80, so 80 and 60 'swap places'
+4) 20  25  30  40  60  80
+    25 'checks' to see if 20 is smaller than it
+    20 is smaller than 25, so 25 and 20 'swap places'
+    Sort is complete

@@ -1,0 +1,23 @@
+linear search
+1) '23', 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    41 not found yet
+2) '27', 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    41 not found yet
+3) '30', 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    41 not found yet
+4) '34', 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    41 not found yet
+5) '41', 51, 55, 57, 60, 67, 72, 78, 83, 96
+    41 now found 
+binary search
+1) 23, 27, 30, 34, 41, 51, 55, '57', 60, 67, 72, 78, 83, 96
+    41 not found yet
+    57 is bigger than 41
+2) 23, 27, 30, '34', 41, 51, 55
+    41 not found yet
+    34 is smaller than 41
+3) 41, '51', 55
+    41 not found yet
+    51 is bigger than 41
+4) '41' 
+    41 now found
