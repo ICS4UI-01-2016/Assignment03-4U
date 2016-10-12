@@ -9,7 +9,7 @@ Question 1 ... Let's look for number 41 using LINEAR SEARCH:
 3)23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
                x
 4) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
-                   ✔
+                    ✔
 Question 1 ... Let's look for number 41 using BINARY SEARCH:
 
 0) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
@@ -57,7 +57,7 @@ It would take approximately 3 steps, Let's search for 53 :) as an example
 1) 47, 11, 53
         x
 2) 53         
-    ✔
+   ✔
 
 Brief explanation: it takes 3 steps because binary search would take the last position of an array
 which is 7 in this case and add it to the first position which is 1, we then divide it by 2 which gives us
@@ -76,7 +76,8 @@ and since this is a big series of numbers, we would have to go through the numbe
 
 In the worst case, selection sort is more efficient in terms of how many swaps have occurred.
 Worst case would mean that the list is sorted backwards and since we're comparing efficency, having a bigger
-list of numbers results in a larger number of going through individual numbers. Selection 
+list of numbers results in a larger number of going through individual numbers (SWAPS). Furthermore, in selection
+sort, the number that is "sorted" would no longer be scanned while for insertion if the num
 
 Question 5:
 the best Big O value notation could be is O(log n),
@@ -87,7 +88,11 @@ the amount of numbers you're sorting through.
 
 
  
-
+Question 7:
+Generally, this type of algorithm would not be suited for a list of array that would consist 
+of strings. That's because strings contain bunch of letters within one slot, having it match
+another string would require breaking up the string into letters. Then have those letters matched.
+The process itself is possible however, the efficiency isn't the greatest in this case.
 
 
 

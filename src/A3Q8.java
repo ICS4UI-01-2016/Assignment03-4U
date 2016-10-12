@@ -16,7 +16,7 @@ public class A3Q8 {
     public static void main(String[] args) {
         // TODO code application logic here
         //the list of strings
-        String[] words = {"Exodia", "Kevin", "Khaled", "Victor", "Arshbarsh", "Majed","Lamont"};
+        String[] words = {"Exodia", "Kevin", "khaled", "Victor", "arshbarsh", "Majed","Lamont"};
 
         //necessary for calling a method later
         A3Q8 test = new A3Q8();
@@ -39,7 +39,7 @@ public class A3Q8 {
             int j = i;
             
             //a while loop that operates until j is 0 (exhausted), compares the string before and the current string
-            while (j > 0 && words[j - 1].compareTo(words[j]) > words[j].compareTo(words[j])) {
+            while (j > 0 && words[j - 1].toLowerCase().compareTo(words[j].toLowerCase()) > words[j].toLowerCase().compareTo(words[j].toLowerCase())) {
                 //stores the current string as temporary
                 String temp = words[j];
                 //if the first letter of the word comes before the first letter of second word, swap

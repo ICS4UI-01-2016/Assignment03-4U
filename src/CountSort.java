@@ -22,9 +22,8 @@ public class CountSort {
         //first calls the method then with a for loop, prints out the sorted array
         test.countSort(n);
         System.out.print("The sorted list: ");
-        for (int i = 0; i < n.length; i++) {
-            //ASK LAMONT if it's ok to have a COMMA being printed at the end of the array. ALSO ASK IF WE ANSWER QUESTION
-            System.out.print(n[i] + ",");
+        for (int i = 0; i < n.length; i++) {  
+            System.out.print(i == n.length-1 ? n[i] : n[i]+ ",");
         }
         //separates the BUILD SUCCESSFUL with the list 
         System.out.println("");
