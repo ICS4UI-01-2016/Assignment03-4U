@@ -134,3 +134,7 @@ Question #5
 The best Big O value that any search algorithm can be is O(log n). This is because it searches the most efficiently by eliminating
 half of the list each time, which would be much more efficient than linear search using constant time where the code looks at each number
 individually while it goes up the list.
+
+Question #7
+The order of the counting sort written in question 7 is O(n+k), simplified down from 2n + k(since the 2 is fairly irrelevant.
+This algorithm 
