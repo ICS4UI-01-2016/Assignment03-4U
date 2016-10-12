@@ -1,0 +1,48 @@
+1   Exercise 1:
+A3Q1
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         F
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+          F
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 T
+
+A3Q2
+1) 25  30  20  80  40  60
+2) 25  20  30  80  40  60
+3) 25  20  30  80  40  60
+4) 25  20  30  40  80  60
+5) 25  20  30  40  60  80
+6) 20  25  30  40  60  80
+
+A3Q3
+1) 1, 2, 3, 4, 5, 6, 7
+            F
+2) 1, 2, 3, 4, 5, 6, 7
+      F
+3) 1, 2, 3, 4, 5, 6, 7
+   F
+4) 1, 2, 3, 4, 5, 6, 7
+         F
+5) 1, 2, 3, 4, 5, 6, 7
+            F
+6) 1, 2, 3, 4, 5, 6, 7
+                  F
+7) 1, 2, 3, 4, 5, 6, 7
+               F
+8) 1, 2, 3, 4, 5, 6, 7
+                     F
+Since it is a large group of numbers, selection sort would be better since insertion sort is meant to handle
+smaller groups of numbers and it is more time consuming. since the maximum number required is 8 and the number 
+of times insertion sort swaps would do far more swaps than selection sort. selection sort swaps the number it needs to 
+which is far more quicker than swapping every number until it is in order.
+
+A3Q4
+For a large array, it would be better to use selection sort over insertion sort since selection sort will individually choose 
+each number, sort it and find its correct place. insertion sort which is meant for a smaller group of numbers will go through 
+each number and sort it into the correct order. Since insertion sort is used for smaller groups of number it will take a longer
+time to sort and find the number.
+
+A3Q5
+the best value for Big O would be O(1) since it is shown on the chart on Mr.Lamont's website that it is the fastest value 
+on the chart.
