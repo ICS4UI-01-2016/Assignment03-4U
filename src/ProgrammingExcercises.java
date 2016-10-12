@@ -24,6 +24,7 @@ public class ProgrammingExcercises {
             test.insertionSort(numList);
             System.out.print(numList[i] + ", ");
         }
+
         // Add extra line to look more neat 
         System.out.println();
 
@@ -31,10 +32,21 @@ public class ProgrammingExcercises {
         System.out.println("Question 7:");
         for (int i = 0; i < numList.length; i++) {
             test.countingSort(numList);
-            System.out.println(numList[i]);
+            System.out.print(numList[i] + ", ");
         }
 
+        // Add extra line to look more neat 
+        System.out.println();
+
         // Print out Question 8
+        System.out.println("Question 8:");
+        String[] wordList = {"Hello", "Apple", "Google"};
+        // Printing the elements individually
+        for (int i = 0; i < wordList.length; i++) {
+            test.insertionSortAlpha(wordList);
+            System.out.println(wordList[i]);
+        }
+
     }
 
     // Question 6
@@ -82,4 +94,23 @@ public class ProgrammingExcercises {
         }
     }
     // Question 8
+
+    public void insertionSortAlpha(String[] word) {
+        // Runs throught the positions of the array
+        for (int i = 0; i < word.length; i++) {
+            // Start at whatever i value and continues decreasing until the set of elements is sorted properly
+            // Create a new intereger and set it equal to i
+            int j = i;
+            // If the element is greater than 0 and the strings are compared to see which is alphabetical order
+            // If not, then the elements switch
+            while (j > 0 && word[j - 1].compareToIgnoreCase(word[j]) > 0) {
+                // Swtich the integers to arrange them in decreasing order
+                String temp = word[j];
+                word[j] = word[j - 1];
+                word[j - 1] = temp;
+                // Continue to decrease until element reaches sorted set of elements 
+                j--;
+            }
+        }
+    }
 }
