@@ -32,8 +32,6 @@ public class Problem1 {
                     for(int shiftPos = currentUnsorted; shiftPos>awnserCheckPostion; shiftPos--){
                         if(shiftPos!=0){
                             awnser[shiftPos] = awnser[shiftPos-1];
-                        } else {
-                            
                         }
                     }
                     //insert number in array
