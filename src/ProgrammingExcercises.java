@@ -22,8 +22,10 @@ public class ProgrammingExcercises {
         // Printing the elements individually 
         for (int i = 0; i < numList.length; i++) {
             test.insertionSort(numList);
-            System.out.println(numList[i]);
+            System.out.print(numList[i] + ", ");
         }
+        // Add extra line to look more neat 
+        System.out.println();
 
         // Print out Question 7
         System.out.println("Question 7:");
