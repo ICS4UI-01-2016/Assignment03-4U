@@ -24,10 +24,18 @@ public class A3 {
             //array is less than the next one
             while (j > 0 && n[j] > n[j - 1]) {
                 int temp = n[j];
+                //switches one number in the array with the previous one
                 n[j] = n[j - 1];
                 n[j - 1] = temp;
                 j--;
             }
+        }
+    }
+    //created a method called "counting" that takes in one array (h)
+    public void Counting(int[] h){
+        int[] e = new int [11];
+        for (int q = 0; q < h.length; q++){
+            e[h[q]] = e[h[q]] + 1;
         }
     }
 
@@ -41,6 +49,17 @@ public class A3 {
         for (int i = 0; i < n.length; i++) {
             System.out.println(n[i]);
         }
+        
+        int[] h = new int[10];
+        for (int p = 0; p < h.length; p++){
+            h[p] = (int)(Math.random()*(101));   
+        }
+        test.Counting(h);
+        
+        for(int b = 0; b < h.length; b++){
+            System.out.println(h[b]);
+        }
+        
 
 
     }
