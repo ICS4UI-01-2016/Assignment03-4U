@@ -9,6 +9,11 @@
  */
 public class A3Q7 {
 
+    // 
+    public void countingSort(int[] n, int[] t) {
+        
+    }
+
     /**
      * @param args the command line arguments
      */
