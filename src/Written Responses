@@ -1,0 +1,67 @@
+A3Q1
+Binary Sort
+1) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                           X
+2) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+               X
+3) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                   Y
+
+Sequential Sort
+1) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+   X
+2) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+       X
+3) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+           X
+4) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+               X
+5) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                   Y
+
+A3Q2
+1) 25  30  20  80  40  60
+2) 25  20  30  80  40  60
+3) 25  20  30  80  40  60
+4) 25  20  30  40  80  60
+5) 25  20  30  40  60  80
+6) 20  25  30  40  60  80
+
+A3Q3
+1) 1, 2, 3, 4, 5, 6, 7
+2) 1, 2, 3, 4, 5, 6, 7
+            X
+3) 1, 2, 3, 4, 5, 6, 7
+      X
+4) 1, 2, 3, 4, 5, 6, 7
+   X
+5) 1, 2, 3, 4, 5, 6, 7
+         X
+6) 1, 2, 3, 4, 5, 6, 7
+            X
+7) 1, 2, 3, 4, 5, 6, 7
+                  X
+8) 1, 2, 3, 4, 5, 6, 7
+               X
+9) 1, 2, 3, 4, 5, 6, 7
+                     X   
+The maximum number of searches that would be required is 8. 
+The method would binary search through the list until it finds the number.
+If the number was the last possible number that the method finds, then the number of searches would be 10.
+
+A3Q4
+In a large array, it would be best to use selection sort over insertion sort. This would be because 
+the method will select each number individually and sort it and find it correct place, 
+rather than insertion sort where it takes each number and finds it correct place. They seem
+to be the same thing but insertion sort is meant for smaller groups of numbers but we have a large 
+group here.
+
+A3Q5
+The best Big O runtime is O(1) since in the chart that can be found on Mr. Lamont's website,
+ the chart is in order from fastest to slowest and O(1) was the first one on that list.
+
+A3Q7
+This is less effective and not as useful than a general sorting method since unlike every other general sorting 
+method, this one took a longer time to code where the other's did not take nearly as long.
+
+                   
