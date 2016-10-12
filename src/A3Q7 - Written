@@ -4,3 +4,19 @@ Determine the order of Counting Sort. Why is this algorithm not as useful as a g
 
 Answer:
 
+The Big O Notation of Counting Sort is O(n+k). The code of this algorithm basically preforms
+this runtime as it first loops through the array of n counting the number of times each number is
+repeated placing these values in a tracker array. Once that it is accomplished
+it then loops through the tracker filling each position within the array of n with the
+numbers counted in the tracker. Finally, the array is sorted from ascending order and
+can be outputted. From this it is obvious that this method loops through n at the start and then
+loops through k (tracker) and n after. Therefore this can be represented as n + k + n or 2n + k
+and finally in proper form O(n+k). This algorithm is not as useful as a general sort algorithm
+because within the case of strings rather than numbers, this algorithm would not work.
+This is essentially because strings are a series of letters within a single spot in an array and
+in order to try to alphabetize a string you would need to break it up into letters and 
+still this would mean not knowing what position it should to be placed within the tracker array
+as no word is equal to the position of 1 or 2. Overall, a form of counting sort could be used 
+to sort these words, however it would be difficult and the runtime would be much longer than any other
+general sorting algorithm. This evidently proves why it is not a useful sorting algorithm
+
