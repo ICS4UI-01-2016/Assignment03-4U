@@ -1,0 +1,83 @@
+Question 1
+
+Number in [] is the current number(s) being looked at.
+And deleted numbers mean that the number has already been checked and proven not the number being searched.
+
+Sequential search
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+[23], 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+     [27], 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+          [30], 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+               [34], 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    [41], 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Each number in the array is looked at sequentially until the number is found.
+
+Binary search
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+23, 27, 30, 34, 41, 51, [55]
+           [34], 41,  51, 55
+            34, [41]
+
+Each time the array is split in half, the half of the array that is not used is ignored.
+
+Once the number is found, will return that is has found the number in the array.
+The return value is that of the position of the number inside of the array.
+
+
+Question 2
+
+Number in [] is the current number being looked at.
+
+[25], [30], 20, 80, 40, 60
+25, [30], [20], 80, 40, 60
+25, 20, [30], [80], 40, 60
+25, 20, 30, [80], [40], 60
+25, 20, 30, 40, [80], [60]
+[25], [20], 30, 40, 60, 80
+20, [25], [30], 40, 60, 80
+20, 25, [30], [40], 60, 80
+20, 25, 30, [40], [60], 80
+20, 25, 30, 40, [60], [80]
+[20], [25], 30, 40, 60, 80
+20, [25], [30], 40, 60, 80
+20, 25, [30], [40], 60, 80
+20, 25, 30, [40], [60], 80
+20, 25, 30, 40, [60], [80]
+
+Starting with the first two number 
+
+Question 3
+
+Number in [] is the current number being looked at.
+
+1, 2, 3, [4], 5, 6, 7
+              5, [6], 7
+                     [7]
+
+The maximum number of comparisons that it should take would be three with the worst case being a
+number that is at the very end of the list. This is because binary search splits the entire array
+in half which will lead to the first and last numbers in the array being compared last respectively.
+
+Question 4
+
+Insertion sort will be the most effective method of sorting with large arrays. This is because the 
+method of selection sort will require the method to look through the array for numbers more often.
+For example, if the lowest number was really far down in the array close to the end, the method would
+have to go through the entire array in order to find it then put it in the first slot. On the flip
+side, the method of insertion sort will always be using it's time effectively to move numbers around.
+
+Question 5
+
+O(log n) is the best possible runtime for any sorting method to have. The most common method of sorting
+that has an O(log n) runtime is binary sort, this is because of it's divide and conquer method of 
+sorting. This means that on average, this method will cover the least possible number of spots in the
+array before successfully sorting the entire thing. 
+
+Question 7
+
+In order for this method to work, the range of values must be known prior to the array is sorted. This
+is because the secondary array will need to have a set number of spaces inside of it that corresponds
+to the max value of the array. 
+
+
