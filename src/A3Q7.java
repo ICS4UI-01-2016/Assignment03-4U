@@ -14,18 +14,20 @@ public class A3Q7 {
 
         // go through n array and add 1 to each array spot
         for (int i = 0; i < n.length; i++) {
-            if (n[i] == i) {
-                tracker[i] = tracker[i] + 1;
-            }
-        }
-        
-        // add array space value to array per amt. in array                     -- FIX
-        for (int i = 0; i < n.length; i++) {
-            while (tracker[i] > 0) {
-                n[i] = tracker[i];
-            }
+            tracker[n[i]]++;
         }
 
+        // add array space value to array per amt. in array                      -- FIX
+        int pos = 0;
+        for (int i = 0; i < tracker.length; i++) {
+            // goes through each array spot until it is at 0
+            while (tracker[i] > 0) {
+                n[pos] = i;                                             //  -- difference between array spot and array value
+                tracker[i]--;
+                // go to the next spot
+                pos++;
+            }
+        }
     }
 
     /**
@@ -37,8 +39,17 @@ public class A3Q7 {
         int[] n = new int[20];
         for (int i = 0; i < n.length; i++) {
             n[i] = (int) (Math.random() * 101);
+
         }
         // Print out array using for loop
+        System.out.println("Unsorted");
+        for (int i = 0; i < n.length; i++) {
+            System.out.print(n[i] + " ");
+        }
+        test.countingSort(n);
+        // Print out array using for loop
+        System.out.println("");
+        System.out.println("Sorted");
         for (int i = 0; i < n.length; i++) {
             System.out.print(n[i] + " ");
         }
