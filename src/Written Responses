@@ -1,0 +1,46 @@
+A3Q1:
+
+binary:
+23 27 30 34 41 51 55 | {57 60 67 72 78 83 96}
+{23 27 30 34} | 41 51 55
+41 |{51 55}
+41
+return 0;
+
+linear:
+x  x  x  x  !
+23 27 30 34 41 51 55 57 60 67 72 78 83 96
+return spot 4;
+
+
+A3Q2:
+bubble sort:
+25 30 20 80 40 60
+25 20 30 80 40 60
+25 20 30 40 80 60
+25 20 30 40 60 80
+20 25 30 40 60 80
+
+
+A3Q3:
+
+You would have to perform 2 comparisons because the 'middle' is canceled 
+out along with the rest of the numbers, leaving only one number at the end.
+
+Ex. {23 27 30 34}| 41 51 55
+    41 |{51 55}
+    41
+
+
+A3Q4:
+
+Selection sort would be quicker than insertion sort for large arrays
+because for insertion sort you have to single out each individual
+number to compare to the rest of the numbers. However, selection
+sort works with the whole array at the same time to sort, making it quicker
+than looking at each number one at a time.
+
+
+A3Q5:
+
+The best big O value for any search algorithm would be '1' because it runs at a constant time.
