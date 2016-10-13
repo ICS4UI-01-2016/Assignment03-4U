@@ -25,10 +25,19 @@ public class A3Q8 {
         }
     }
     
+    // Main method that inputs a series of words from an array to the method
+    // and outputs the ordered array of words
     public static void main(String[] args) {
+        // Tests file
         A3Q8 test = new A3Q8();
+        
+        // A randomized array of words out of order
         String [] l = {"dog", "cat", "ant", "bee"};
+        
+        // Call on the method of insertion sort with the perimeter as the array of n
         test.alphebetical(l);
+        
+        // Output the sorted array of n
         for(int i = 0; i < l.length; i ++){
             System.out.print(l[i] + " ");
         }
