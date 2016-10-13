@@ -56,14 +56,13 @@ public class ProgrammingExcercises {
             // Start at whatever i value and continues decreasing until the set of elements is sorted properly
             // Create a new integer and set it equal to i
             int j = i;
-            // If the element is greater than 0 and the smaller element is found before the bigger element, it is ok
-            // If not, then the elements switch
+            // If the element is greater than 0 and a smaller element is found before the bigger element, switch!
             while (j > 0 && n[j - 1] < n[j]) {
                 // Switch the integers to arrange them in decreasing order
                 int temp = n[j];
                 n[j] = n[j - 1];
                 n[j - 1] = temp;
-                // Continue to decrease until element reaches sorted set of elements 
+                // Continue to decrease until the very last element 
                 j--;
             }
         }
@@ -88,7 +87,7 @@ public class ProgrammingExcercises {
                 // Connecting the first set of elements (Original set of elements) to the second set of elements (Tracker numbers) 
                 n[x] = i;
                 x++;
-                // Subtract 1 from that certain element each time the loop goes through the second set of numbers
+                // Subtract 1 from that certain element (within a certain index) each time the loop goes through the second set of numbers
                 tracker[i]--;
             }
         }
@@ -100,8 +99,7 @@ public class ProgrammingExcercises {
         for (int i = 0; i < word.length; i++) {
             // Create a new intereger and set it equal to i
             int j = i;
-            // If the element is greater than 0 and the strings are compared to see which is alphabetical order, leave it!
-            // If not, then the words switch
+            // If the element is greater than 0 and the strings are compared to see which is alphabetical order, switch it!
             while (j > 0 && word[j - 1].compareToIgnoreCase(word[j]) > 0) {
                 // Switch the integers to arrange themselves in alphabetical order
                 String temp = word[j];

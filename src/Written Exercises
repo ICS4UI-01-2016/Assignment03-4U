@@ -1,4 +1,5 @@
 A3Q1:
+Scores:
 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
 Sequential(Linear) Search: 
 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
@@ -19,8 +20,8 @@ Binary Search:
 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
 
 23, 27, 30, 34, 41, 51, 55 | 57, 60, 67, 72, 78, 83, 96 --> - Is the number greater or less than: 57 - less than 57
-                                                            - check number halfway in the new array
-                              X
+                             X                              - check number halfway in the new array
+                              
 23, 27, 30 | 34, 41, 51, 55 --> - Is the number greater or less than: 34 - greater than 34
              X                  - Check number halfway in the new array
 
@@ -29,7 +30,7 @@ Binary Search:
 
                  41 
                  O
-Binary search works by essentially splitting a set of elements in half, checking which half the number is within
+Binary search works by essentially splitting a set of elements in half, checking which half the number is within (if is is greater or less than the middle number)
 and getting rid of the other half. This occurs until there are no more numbers to be split and therefore,
 the specific element is then found as shown above this text!
 
@@ -80,7 +81,7 @@ index value of 3 and 80 has an index value of 4.
 incorrect order, therefore they become switched, making 60 have an index value of 4 and making 80 have an index value
 of 5.  
 
-(6 & 7)Lastly, the loop then goes to the front of the set of elements and runs through again(as a check essentially). It notices that 25 and 20 are in 
+(6 & 7)Lastly, the loop then goes to the front of the set of elements to and runs through again(as a check essentially). It notices that 25 and 20 are in 
 the incorrect order of index, therefore they become switched, 20 then has an index of 0 and 25 has an index of 1.
 
 (8) Final result (The method runs through the set of elements to check again if sorted)
@@ -112,7 +113,7 @@ A3Q4:
 MY OPINION :)
 In my opinion, in the worst case, selection sort would be quicker than insertion sort. I think is true due to the fact that the insertion
 sorting method has to go through the set of numbers twice due to the method's way of working, swapping, moving back and forth within the numbers. Selection sort simply has 
-one element go through the entire set of elements (it can switch values if it must need to) then place itself accordingly in
+one element go through the entire set of elements (it can switch values if it must need to whenever going through and finding a element with a greater value) then place itself accordingly in
 its rightful index value! In insertion sort, the method goes through every index even through the ones which are sorted already. 
 Insertion sort is essentially doing more work that is "unnecessary" compared to selection sort. Insertion sort can be n number of 
 swaps depending on the amount of elements within an array and their placement, therefore making insertion sort take a longer time to sort compared to selection sort. 
