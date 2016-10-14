@@ -144,7 +144,7 @@ A3Q7: Determine the order of Counting Sort.
 
       - n (The last set of elements is then determined and printed)
 
-      Therefore the Big O value of Counting Sort is O(n + k).
+      Therefore the Big O value of Counting Sort is O(n + k). (Would be 2n but computers don't care about coefficients!)
 
       Counting sort is not as useful as any other algorithm due to the fact that it slacks efficiency! This sorting method first must find the amount
       of elements that have the same value and then store them. After this is finished, the new indexes have to add up together. Then for the final product, the 

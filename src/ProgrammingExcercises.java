@@ -56,7 +56,7 @@ public class ProgrammingExcercises {
             // Start at whatever i value and continues decreasing until the set of elements is sorted properly
             // Create a new integer and set it equal to i
             int j = i;
-            // If the element is greater than 0 and a smaller element is found before the bigger element, switch!
+            // If the element is greater than 0 and a smaller element is found before the bigger element, switch them!
             while (j > 0 && n[j - 1] < n[j]) {
                 // Switch the integers to arrange them in decreasing order
                 int temp = n[j];
@@ -84,10 +84,10 @@ public class ProgrammingExcercises {
             // If the tracker array number is not equal to zero, have a for loop go through the entire array with the integer x involved and then sort!
             while (tracker[i] != 0) {
                 // Sort the array
-                // Connecting the first set of elements (Original set of elements) to the second set of elements (Tracker numbers) 
+                // Connecting the first set of elements (original set of elements) to the second set of elements (Tracker numbers) 
                 n[x] = i;
                 x++;
-                // Subtract 1 from that certain element (within a certain index) each time the loop goes through the second set of numbers
+                // Subtract 1 from that certain element (within a certain index from the tracker) each time the loop goes through the second set of numbers
                 tracker[i]--;
             }
         }
@@ -97,9 +97,9 @@ public class ProgrammingExcercises {
     public void stringSort(String[] word) {
         // Runs through the positions of the array
         for (int i = 0; i < word.length; i++) {
-            // Create a new intereger and set it equal to i
+            // Create a new integer and set it equal to i
             int j = i;
-            // If the element is greater than 0 and the strings are compared to see which is alphabetical order, switch it!
+            // If the string is greater than 0 and the string before another string isn't in alphabetical order, switch them to be in alphabetical order!
             while (j > 0 && word[j - 1].compareToIgnoreCase(word[j]) > 0) {
                 // Switch the integers to arrange themselves in alphabetical order
                 String temp = word[j];
