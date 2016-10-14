@@ -136,7 +136,7 @@ half of the list each time, which would be much more efficient than linear searc
 individually while it goes up the list.
 
 Question #7
-The order of the counting sort written in question 7 is O(n+k), simplified down from 2n + k(since the 2 is fairly irrelevant.
+The order of the counting sort written in question 7 is O(n+k), simplified down from 2n + k(since the 2 is fairly irrelevant compared to the final sum).
 This algorithm is less useful than general sorting methods since it can't be used in our case with an unknown number value limit,
 because an array needs to be created that underlines what numbers can potentially be in the list of numbers. Therefore it also 
 is unable to be used in accordance with sorting other objects such as strings.
