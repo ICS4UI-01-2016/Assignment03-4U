@@ -25,7 +25,7 @@ public class A3Q8 {
         for (int i = 0; i < words.length; i++) {
             //calls the method
             test.insertionSort(words);
-            System.out.print(words[i]+ ",");
+            System.out.print(i == n.length-1 ? n[i] : n[i]+ ",");
         }
         //separates the list of strings from BUILD SUCCESSFUL
         System.out.println("");
