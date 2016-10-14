@@ -1,0 +1,162 @@
+A3Q1:
+Scores:
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Sequential(Linear) Search: 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+ X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+     X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+             X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 O
+For linear search you would simply have code run through the entire 
+set of elements. While it is running through the set of elements, it is checking
+whether the number within each index is the number 41. When 41 is found, the loop then stops!
+
+Binary Search:
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+23, 27, 30, 34, 41, 51, 55 | 57, 60, 67, 72, 78, 83, 96 --> - Is the number greater or less than: 57 - less than 57
+                             X                              - check number halfway in the new array
+                              
+23, 27, 30 | 34, 41, 51, 55 --> - Is the number greater or less than: 34 - greater than 34
+             X                  - Check number halfway in the new array
+
+                 41 | 51, 55 --> Is the number greater or less than: 51 - less than 51
+                       X     --> The last number remaining is the number that is being searched for!
+
+                 41 
+                 O
+Binary search works by essentially splitting a set of elements in half, checking which half the number is within (if is is greater or less than the middle number)
+and getting rid of the other half. This occurs until there are no more numbers to be split and therefore,
+the specific element is then found as shown above this text!
+
+
+A3Q2:
+Bubble sorting:
+For bubble sorting, the numbers essentially check if one is greater than or less than another number, moving 
+left to right. The numbers than switch index's if one is greater (left) than the other (right). (1) The sorting
+method has already gone through the first two numbers (25, 30) and realized that their positions are correct. 
+0   1   2   3   4    5  (Indexes)
+25  30  20  80  40  60  (Starting set of numbers)
+
+25  30  20  80  40  60  (1)  
+X   X   X   X   X   X   
+
+25  30  20  80  40  60  (2)
+O     ><    X   X   X   
+    SWITCH!
+
+25  20  30  80  40  60  (3)
+O   O   O   X   X   X
+
+25  20  30  80  40  60  (4)
+O   O   O     ><    X   
+            SWITCH
+25  20  30  40  80  60  (5)
+O   O   O   O    ><
+                SWITCH
+25  20  30  40  60  80  (6)
+X   X   O   O    O   O    
+                
+25  20  30  40  60  80  (7)
+  ><    O   O   O   O
+SWITCH
+20  25  30  40  60  80  (8)
+O   O   O   O   O   O
+
+(2) When the method goes through to find 30 and 20 in the incorrect positions, the method switches the two
+numbers around so that the lower value (20) is found in index 1 and the larger value (30) is found in index
+2.  
+(3) The method than goes through next numbers, which are 30 and 80. Since both of these numbers are in the 
+correct order but in the incorrect index, the method then goes to the next set of numbers which are 80 and 40.
+
+(4)The sorting method then realizes that both 80 and 40 are in the incorrect order, therefore they become switched, 40 then has an 
+index value of 3 and 80 has an index value of 4. 
+ 
+(5)Then, the method looks at the last set of numbers, 80 and 60. It notices that they are in
+incorrect order, therefore they become switched, making 60 have an index value of 4 and making 80 have an index value
+of 5.  
+
+(6 & 7)Lastly, the loop then goes to the front of the set of elements to and runs through again(as a check essentially). It notices that 25 and 20 are in 
+the incorrect order of index, therefore they become switched, 20 then has an index of 0 and 25 has an index of 1.
+
+(8) Final result (The method runs through the set of elements to check again if sorted)
+
+
+A3Q3:
+LOOKING FOR THE NUMBER 1!
+1  2  3  4  5  6  7
+
+1  2  3  4 | 5  6  7
+             X  X  X -> GET RID OF!
+1  2  3  4 ============ NEW SET OF ELEMENTS
+
+1  2 | 3  4 
+       X  X ----------> GET RID OF!
+1  2 ================== NEW SET OF ELEMENTS
+  
+1 | 2
+O
+GET RID OF 2! FOUND 1!
+ - Therefore 1 is in the index of 0!
+
+Therefore the maximum number of comparisons to perform a binary search on a list containing seven items is 3 (this occurs in my example when the number looked for
+is the first number). The answer is three because after the 3rd step(the 3rd split in half), it is impossible
+to proceed with the same loop since the answer is found due to the fact that the list only contains 7 items/elements! 
+
+
+A3Q4:
+MY OPINION :)
+In my opinion, in the worst case, selection sort would be quicker than insertion sort. I think is true due to the fact that the insertion
+sorting method has to go through the set of numbers twice due to the method's way of working, swapping, moving back and forth within the numbers. Selection sort simply has 
+one element go through the entire set of elements (it can switch values if it must need to whenever going through and finding a element with a greater value) then place itself accordingly in
+its rightful index value! In insertion sort, the method goes through every index even through the ones which are sorted already. 
+Insertion sort is essentially doing more work that is "unnecessary" compared to selection sort. Insertion sort can be n number of 
+swaps depending on the amount of elements within an array and their placement, therefore making insertion sort take a longer time to sort compared to selection sort. 
+***************************************************************************************************************************************************
+(The actual answer below... My opinion is above since I live to be different and change it up by having my own opinion on everything in this world lol :))
+In the worst case, both methods of sorting, insertion sort and selection sort have the same run time. This is
+because both insertion sort and selection sort have a run time of O(n^2). Therefore, when an array is large and sorted backwards (worst case),
+both sorting methods will have exactly the same run time as they undergo the same amount of runs through the loops!
+
+A3Q5:
+The best Big O value for any searching algorithm is O(log n). This is because the best Big O value is achieved by binary search! Binary search
+has the ability to achieve the best Big O value due to its sorting method. Binary search, also known as half-interval search works by essentially splitting a properly ordered
+set of elements in half, searching for the number within a half (checking if the specific number is greater or less than where split), getting rid of the other half and so on 
+until the specific element is found. This is extremely efficient due to the fact that after the binary search splits a set of elements in half, it doesn't have to 
+look through an entire half and focuses on the other half (depends which half the number being searched for is specifically within). Because binary search does this, it saves a lot
+of time not having to search and deal with the other half of numbers that are practically useless to the searching method. In essence, binary search is the best 
+example when achieving the best Big O value of O(log n)!
+
+
+A3Q6: Found within the Java Class Main file named ProgrammingExercises.java!
+
+
+A3Q7: Determine the order of Counting Sort.
+      - n (Goes through the specific amount of elements and places them in "buckets", where there are more of the same index value within an index,
+          it gathers how many of that specific number is present within an array)
+
+      - k (The tracker then relates itself with its values back to the original set of elements, which then determines the last set of ordered elements)
+
+      - n (The last set of elements is then determined and printed)
+
+      Therefore the Big O value of Counting Sort is O(n + k). (Would be 2n but computers don't care about coefficients!)
+
+      Counting sort is not as useful as any other algorithm due to the fact that it slacks efficiency! This sorting method first must find the amount
+      of elements that have the same value and then store them. After this is finished, the new indexes have to add up together. Then for the final product, the 
+      numbers which have added indexes together, go back and relate themselves to the first set of number's indexes and look to the added index and what ever number they 
+      contain is where that specific number is sorted for the final result. (https://www.youtube.com/watch?v=zhDmVF_NdjM). Also, for general searching, this algorithm is not
+      great due to the fact the tracker array would rather be inefficient when sorting words when all you can simply do is program to find a certain letter. Counting sort is
+      inefficient when sorting strings compared to when sorting numbers. In general, this sorting method isn't the best to use when wanting to sort elements or strings quickly!
+
+
+A3Q8: Found within the Java Class Main file named ProgrammingExercises.java!
+
+
+
+
+
