@@ -66,18 +66,13 @@ division, ints always round down meaning it would be 2 instead of 2.5. We look a
 left in the array list, we add last position which is 2 and first which is 1 to get 3, then divide it by 2
 to get 1.5 which again is 1. At that position we see "53". We have completed binary search.
 
-Question 4 Which one is faster ? 
-Selection sorting is little faster because insertion is only useful with smaller groups. 
-In terms of amount of swaps, Selection is little more efficient.
-Selection sorting would take a number and place it where it is suppose to be. 
-That number will no longer be scanned for as it is now "sorted".
-While insertion would go through every single number within a given series of numbers, 
-and since this is a big series of numbers, we would have to go through the numbers we "sorted".
-
+Question 4: Which one is faster  
 In the worst case, selection sort is more efficient in terms of how many swaps have occurred.
 Worst case would mean that the list is sorted backwards and since we're comparing efficency, having a bigger
 list of numbers results in a larger number of going through individual numbers (SWAPS). Furthermore, in selection
-sort, the number that is "sorted" would no longer be scanned while for insertion if the num
+sort, the inner loop is over the unsorted elements, every scan selects one element and moves it to its final 
+position. Meanwhile, insertion sort would have its inner loop iterate over the sorted elements which are displaced
+until the loop has finally sorted ALL elements within the list.
 
 Question 5:
 the best Big O value notation could be is O(log n),
@@ -87,13 +82,20 @@ through every number from beginning to end. When you divide a number, you're ess
 the amount of numbers you're sorting through. 
 
 
- 
 Question 7:
 Generally, this type of algorithm would not be suited for a list of array that would consist 
 of strings. That's because strings contain bunch of letters within one slot, having it match
 another string would require breaking up the string into letters. Then have those letters matched.
 The process itself is possible however, the efficiency isn't the greatest in this case.
 
+As for finding the order of my algorithm, it would be O(n + k(n-x)).
 
-
-          
+Let's break this down to steps:
+Let n represent the elements needed to be sorted and let k represent the tracker containing 100 numbers
+and x representing the total sum amount of all spots within tracker that have a number higher than 1 (i.e one spot may have 3 numbers of 54s, x would equal 2)
+Going down the method countSort, we first have our tracker array initialized, then we have a for loop involving 
+n where the tracker adds to a spot everytime it sees a number. Then we have a for loop that goes through entire elements of k,
+within this for loop, there is an if statement that restricts k. Since there is potential of having repeated numbers within
+a list, that means there will be less amount of times of passing through the array, for example we have 5 slots of numbers to sort that contain
+two 33s, this means that the loop is list condensed down to 4 slots instead, that's why n-x is written this way, we
+are subtracting the original list of array (n) with the amount of times there are repeated values within the array (x). 
