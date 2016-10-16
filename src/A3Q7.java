@@ -10,12 +10,8 @@
  */
 public class A3Q7 {
 
-    /**
-     * @param args the command line arguments
-     */
-    
     // Method for the sorting method of Insertion Sort
-    // Counting Sort basically preforms this by first loopuing through the array of n 
+    // Counting Sort basically preforms this by first looping through the array of n 
     // counting the number of times each number is repeated placing these values in a tracker array. 
     // Once that it is accomplished it then loops through the tracker filling each position 
     // within the array of n with the numbers counted in the tracker. 
@@ -25,31 +21,36 @@ public class A3Q7 {
         // New array that stores the number of times a value is within the n array
         int [] tracker = new int [101];
         
-        // Loop through the n array until it has acceeded the length, counting
-        // placing the values in the coorisponding position in the tracker array
+        // Loop through the n array until it has acceeded the length, counting and
+        // placing the values in the cooresponding position in the tracker array
         for(int i = 0; i < n.length; i++){
            
            // Increase the value
            tracker[n[i]] ++;
         }
         
+        // Identify the position within the n array that a new value is going to be placed in
         int spotInArray = 0;
         
+        // Now that we have the tracker array, it tells if that spotInTracker
+        // position is in the sorted array and how many times one after
+        // another in the sorted array.   This technique allows you to 
+        // create the sorted array 2 passes of the array O(2*n)
         for(int spotInTracker = 0; spotInTracker < tracker.length; spotInTracker++){
-            
-            int amountOfNum = tracker[spotInTracker];
-            
-            if (amountOfNum != 0) {
                 
-                for (int i = 0; i < amountOfNum; i++) {
-                    n[spotInArray] = spotInTracker;
-                    spotInArray ++;
-                    System.out.println("spotInTracker: " + spotInTracker);
-                    System.out.println("spotInArray: " + spotInArray);
-                    System.out.println("i: " + i);
-                    System.out.println("amountOfNum: " + amountOfNum);
-                    System.out.println(" ");
-                }
+            // If the index is less than the value in that secific position in the tracker,
+            // than loop through that specific spot in the tracker array. 
+            // When doing so, this adds the position that it is at in the tracker 
+            // into the new array of n.
+            // Continues to add this number into a new spot until the
+            // array has filled this value in the correct number of positions in the new array
+            for (int i = 0; i < tracker[spotInTracker]; i++) {
+                
+                // Placing the number at which it is at in the tracker into the new array
+                n[spotInArray] = spotInTracker;
+                
+                // Moving onto the next position in the new array
+                spotInArray ++;
             }
         }
     }

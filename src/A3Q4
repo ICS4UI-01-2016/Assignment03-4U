@@ -5,17 +5,18 @@ For large arrays, in the worst case, is selection sort faster than insertion sor
 Answer:
 
 For large arrays that are in the worst case, selection sort and insertion sort will 
-preform equally. However given the option of choosing between the two in this case, 
-selection sort would be "faster". I believe this because through the code of selection sort
-it looks for the smallest (or largest depending on which way you want to sort), 
-and places it in the correct position. Then it repeats this process until it has reached 
-the end of the numbers to sort. Therefore, selection sort will only have to make
-the minimum amount of swaps, placing it in the proper place right away and going through the array only once. 
+perform equally. However given the option of choosing between the two in this case, 
+selection sort would be "faster" in worst case scenario. I believe this because 
+through the code of selection sort it looks for the smallest (or largest depending 
+on which way you want to sort), and places it in the correct position.  The 
+algorithm then repeats this process until it has reached the end of the numbers 
+to sort. Therefore, selection sort will only have to make the minimum amount of 
+swaps, placing it in the proper place right away and updating each element of the array only once. 
 Whereas, insertion sort will sort the array one number at a time. 
 It essentially picks up the number and shuffles it down the array until it finds 
-the appropriate spot in the array. This means that this type of array will 
-constantly swap the numbers making a large amount of transitions to the array, not
+the appropriate spot in the array. This means that this type of algorithm will 
+constantly swap the numbers making a large amount of swaps to the array, not
 always placing it in the right position right away and going through the array more than once.
 For example, as it has to constantly swap one by one the lowest number that is at the end back to the front.
-This is why I believe selection sort would be faster than insertion sort.
+This is why I believe selection sort would be faster than insertion sort in the worst case situation.
 
