@@ -1,0 +1,88 @@
+
+Question 1
+
+Linear Search
+
+Goes through every number until it finds the number its looking for.
+Only works if the array has already been sorted
+
+0) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+1) 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Array is looking for the number 41, so it goes to the first number.
+The first number is not 41, so it takes off the first number and keeps going.
+
+2) 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Second number is not 41 either so it takes off the second number.
+
+3) 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+It keeps doing this until it finds number 41.
+
+4) 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+The fourth number is 41! 
+The program stops once the number it is looking is the first number in the array.
+
+Binary Search
+
+Binary search finds the middle number of the array.
+Sometimes you could get lucky and find the number right there.
+If the middle number is bigger than the number it is looking for, it takes off the second half of the array.
+If the middle number is smaller than the number it is looking for, it takes off the first half of the array.
+This only works if the array is already sorted.
+
+0) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+The number that is being searched for is number 41.
+In this case, the program goes to number 57.
+
+1) 23, 27, 30, 34, 41, 51, 55
+57 is bigger than 41 so the program takes off the second half, because all those numbers will be bigger than 41.
+Now, the program goes to number 34.
+
+2) 41, 51, 55
+34 is smaller than 41, so the program takes off the first half.
+Now the program goes to number 51.
+
+3) 41
+51 is bigger than 41 so the program takes off the second half of the array.
+The only number left is the number being searched for.
+
+Question 2
+
+Bubble Sort
+
+Goes through every number one by one.
+If the first number is bigger than the second number, they switch places.
+
+0) 25, 30, 20, 80, 40, 60
+
+1) 25, 20, 30, 40, 80, 60
+25 and 30 don't switch places because 25 is smaller than 30. 
+20 and 30 switch places because 20 is smaller than 30.
+80 and 40 also switch places because 80 is smaller than 40.
+
+2) 20, 25, 30, 40, 60, 80
+20 and 25 switch places because 20 is smaller than 25.
+80 and 60 switch places because 80 is bigger than 60.
+The array is now sorted.
+
+Question 3
+
+0) 1, 2, 3, 4, 5, 6, 7
+
+1) 1, 2, 3
+
+2) 1
+
+The maximum number of comparisons that can be made in a 7 digit array is 2.
+
+Question 4
+
+In large arrays, selection sort would be a better method than insertion sort. 
+Insertion sort would be better with smaller arrays.
+In large arrays, it would take a long time to shuffle all the numbers into the correct spots.
+
+Question 5
+
+The best Big O value is O(1).
+
+
