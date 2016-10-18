@@ -16,7 +16,6 @@ public class A3Q8 {
                 word[j] = word[j-1];
                 word[j-1] = temp; 
             }
-            
         }
     } 
     /**

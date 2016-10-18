@@ -42,11 +42,18 @@ Ex: 7, 5, 8, 3, 6, 2, 4
    
 A3Q4:
 Selection sort is faster because insertion sort is only efficient for sorting 
-smaller groups of numbers while .  
+smaller groups of numbers. Selection sort generally requires less swaps because 
+it checks whether each number or string is larger or smaller than the next, depending
+on which way you want to sort, and then it swaps it with the next. If there are 
+no other swaps that are needed to be performed then the number or check that is 
+being checked will be placed at the correct position.  
 
 A3Q5:
 Binary search is the fastest because it searches through the middle of the array 
 each time and eliminates half of the set at a time.
 
+A3Q7:
+Counting Sort is not as useful as other sorting algorithms such as selection or 
+insertion sort because it will not be able to sort a list of strings very well as 
+they contain multiple letters that need to be sorted.
   
-
