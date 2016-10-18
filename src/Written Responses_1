@@ -1,0 +1,82 @@
+Question 1;
+//the number that is in () is the number being looked at (traced)
+(23), 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+23, (27), 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+23, 27, (30), 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+23, 27, 30, (34), 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+23, 27, 30, 34, [41], 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+The sequence starts at the first number, continues down the list until the number is found
+
+
+//the number in[] is the number that was being searched for.
+
+
+
+Binary search
+
+The number that is in () is the number that is being looked at 
+ 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+ 23, 27, 30, 34, 41, 51,(55),
+            (34), 41, 51," 55",
+             34, (41),
+// the array get spilt in have and one half of the array is not used
+
+//once the number is found the array will return the specific spot that number is, in the sequence.
+
+Question 2
+ //the numbers in brackets are the numbers that are being compared 
+(25)  (30)  20  80  40  60
+25  (30)  (20)  80  40  60
+25  20  (30) (80)  40  60
+25  20  30  (80)  (40)  60
+25  20  30  40  (80)  (60)
+25  20  30  40   60    80
+(25) (20)  30  40  60  80
+20  (25)  (30)  40  60  80
+20  25  (30)  (40)  60  80
+20  25  30  (40)  (60)  80
+20  25  30  40  (60)  (80)
+(25) (20)  30  40  60  80
+20  (25)  (30)  40  60  80
+20  25  (30)  (40)  60  80
+20  25  30  (40)  (60)  80
+20  25  30  40  (60)  (80)
+
+
+// the sequence starts at the first number and compares it to the the number in the next spot to
+check if the number in spot 1 is larger than the number in spot 2.If so the numbers swap.
+
+//if there was a swap detected,the method method will go through sequence again until there is no
+swap detected
+
+//once there is no swap detected,the sequence will repeat itself one more time to verify that there is no change 
+//at this point the numbers should be in order.
+
+Question 3
+
+1,2,3,4,5,6,7
+1,2,3,4
+1,2
+ 2
+//A binary search containing seven items can have a maximum of 3 comparisons
+
+Generally to figure out how many possibilities there at the formula that can be used is 
+log n(base 2) + 1 ,where n represents how many numbers there are in the list. 
+for example the max number of comparisons of a 8 number sequence would be log 8(base 2) + 1= 4; 
+
+Question 4
+
+In the worst case, insertion sort will be faster than selection sort.This is because when dealing 
+with a larger array insertion sort will store single integers into memory to be compares to the next. Whereas 
+in selection sort to numbers will always be being compared. Generally storing into memory will be faster than 
+reading two integers.
+
+Question 5
+Considering binary is the quickest sorting algorithem O(log(n)) is the best big O value for any 
+sorting method.Binary sort needs to go through the least number of spots to find the integer,
+therfore it is the most efficient further meaning that the the big O value for binary sort is the 
+best value.
+
+
+
