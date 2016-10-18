@@ -25,7 +25,7 @@ The number that is in () is the number that is being looked at
 //once the number is found the array will return the specific spot that number is, in the sequence.
 
 Question 2
-//the numbers in brackets are the numbers that are being compared 
+ //the numbers in brackets are the numbers that are being compared 
 (25)  (30)  20  80  40  60
 25  (30)  (20)  80  40  60
 25  20  (30) (80)  40  60
