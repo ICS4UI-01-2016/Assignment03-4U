@@ -1,0 +1,82 @@
+() - Already sorted
+[] - Being looked at
+
+1.)
+Search for 41:
+SEQUENTIAL SEARCH
+[23], 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+(23), [27], 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+(23), (27), [30], 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+(23), (27), (30), [34], 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+(23), (27), (30), (34), [41], 51, 55, 57, 60, 67, 72, 78, 83, 96
+Check through each number in the list 1 by one until the desired number is found 
+in this case it is 41 so when it gets to the fifth number it will have found it.
+
+BINARY SEARCH
+23, 27, 30, 34, 41, 51, [55], 57, 60, 67, 72, 78, 83, 96
+23, 27, [30], 34, 41, 51
+34, [41], 51
+The algorithm will look at the halfway point of the sorted list of numbers, if this
+number is less than the number being searched for, it will disregard all numbers 
+to the left of the number and the number being looked at and vice versa if it is larger 
+than the number being looked for. This will be repeated until the number being searched
+for is the number being looked at.
+
+2.)
+Sort:
+BUBBLE SORT
+[25], [30], 20, 80, 40, 60
+25, [20], [30], 80, 40, 60
+25, 20, [30], [80], 40, 60
+25, 20, 30, [40], [80], 60
+25, 20, 30, 40, [60], [80]
+[20], [25], 30, 40, 60, (80)
+20, [25], [30], 40, 60, (80)
+20, 25, [30], [40], 60, (80)
+20, 25, 30, [40], [60], (80)
+[20], [25], 30, 40, (60), (80)
+20, [25], [30], 40, (60), (80)
+20, 25, [30], [40], (60), (80)
+[20], [25], 30, (40), (60), (80)
+20, [25], [30], (40), (60), (80)
+20, 25, (30), (40), (60), (80)
+[20], [25], (30), (40), (60), (80)
+(20), (25), (30), (40), (60), (80)
+This algorithm compares two side by side numbers to see if the smaller is on the
+left if it is it moves on if not it switches them, then moves on to the next possible pair
+and so on, when it reaches the end it will loop back to the beginning and the last number
+will be considered sorted. It will continue until the entire array is sorted
+
+3.)
+Search for 18:
+(Getting rid of the number looked at)
+2, 3, 5, [8], 10, 13, 18
+10, [13], 18
+18
+(Not getting rid of number being looked at)
+2, 3, 5, [8], 10, 13, 18
+8, [10], 13, 18
+10, [13], 18
+[13], 18
+The maximum number of comparisons required to find a number using binary search 
+in an array 7 numbers long is either 3 or 4 depending on whether the number being
+looked at is deleted or not. As that is the number of times you can divide 7 in half 
+before getting down to 1 or 2 numbers.
+
+4.)
+In the worst case where there would be a lot of copying selection sort would be 
+quicker than insertion sort, since there is a lot less copying involved which would take a lot
+more time and memory, however since selection sort does more comparisons it would be
+quicker/more efficient.
+
+5.)
+The best Big O value that a search algorithm can be is O(log n) because it covers
+the least number of comparisons possible.
+
+For example binary search has a O(log n) because it's an algorithm that takes the least
+possible average number of comparisons to get to an answer
+
+7.)
+Counting sort is not as useful as a general sorting algorithm because the range of values in the array must be known
+before hand, so it technically could not sort everything. As when you are transferring the number of times each number shows
+up in the array, a number could easily be out of bounds. Say there was a 150 in our array but the array only goes up to 101.
