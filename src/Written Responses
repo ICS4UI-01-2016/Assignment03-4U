@@ -62,4 +62,26 @@ these comparisons requires an operation, most of which do not result in the
 movement of a number.
 
 Question 5:
+The best Big O Value for any searching method is O(log(n)). This is for the 
+binary search. Binary search divides the set of sorted values into two pieces
+while also determining which half the number is. Binary sort is so efficient
+because it eliminates half of the set of numbers each time an operation is
+performed. No other search method eliminates this many numbers at a time.
+Binary sort goes through the least number of spots in the array before finding
+the number.
 
+Question 7:
+The Big O value for counting sort is O(n+k)
+n--> The first loop goes through elements in array being sorted and keeps track
+of how many there are of each
+k--> The next loop checks each spot in tracker array for how many of each number
+there is
+n--> Each number is outputted the number of times it occurs
+
+Really O(2n+k) but coefficient is insignificant.
+
+This sorting algorithm is not efficient because in an application in which a set
+of numbers for which the range is not known, the program first has to go through
+the array to determine the range by comparing each number. The range needs to be
+determined since the tracker array needs to have the number of spaces necessary
+within the array.
