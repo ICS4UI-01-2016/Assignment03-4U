@@ -1,0 +1,87 @@
+
+
+Question 1:
+Sequential Search:
+Searching for: 41
+-->check each number in order until number is found
+(23) 27 30 34 41 51 55 57 60 67 72 78 83 96
+23 (27) 30 34 41 51 55 57 60 67 72 78 83 96
+23 27 (30) 34 41 51 55 57 60 67 72 78 83 96
+23 27 30 (34) 41 51 55 57 60 67 72 78 83 96
+23 27 30 34 (41) 51 55 57 60 67 72 78 83 96
+Number Found.
+
+Binary Search:
+Numbers: 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Searching For: 41
+a) Divide number of indexes in array by 2 --> 14/2 = 7
+b) Check if number at spot 7 is greater than, less than, or equal to 41 --> 57 > 41
+c) Number is greater, ignore numbers greater than 57.
+d) Check midpoint number again (of indexes lower than 7) (space 3) --> 30<41
+e) 30 is less than 41, so check numbers in section between index 3 and 7.
+f) Check if number at spot 5 is greater than, less than or equal to 41 --> 41=41
+g) Number found at spot 5.
+
+Question 2:
+Numbers: 25  30  20  80  40  60
+Order: Ascending
+Bubble Sort:
+25  30  20  80  40  60
+[25  30]  20  80  40  60
+25  [30  20]  80  40  60
+25  20  [30  80]  40  60
+25  20  30  [40  80]  60
+25  20  30  40  [80  60]
+[25  20]  30  40  60  80
+20 25 30 40 60 80
+
+Question 3:
+Example Numbers: 1 2 3 4 5 6 7
+Searching For: 1
+Binary Search:
+Step 1) Compare middle number.
+1 2 3 |4| 5 6 7
+-> Number less than and not equal to 4, eliminate right half
+Step 2) Compare middle number.
+1 |2| 3
+-> Number less than and not equal to 2, eliminate right half
+Step 3) Compare number.
+1
+-> Number is 1
+
+Process took 3 steps.
+Either extremes of the number range would have taken 3 steps.
+Because it is the lowest or highest number, it requires the maximum number of 
+comparisons to arrive to the number.
+
+Question 4:
+In a large array that is in the worst case scenario, selection sort is the
+slowest because it has to go to the end of the array to find the smallest number
+comparing each number it passes to the stored, smallest number. Each one of 
+these comparisons requires an operation, most of which do not result in the 
+movement of a number.
+
+Question 5:
+The best Big O Value for any searching method is O(log(n)). This is for the 
+binary search. Binary search divides the set of sorted values into two pieces
+while also determining which half the number is. Binary sort is so efficient
+because it eliminates half of the set of numbers each time an operation is
+performed. No other search method eliminates this many numbers at a time.
+Binary sort goes through the least number of spots in the array before finding
+the number.
+
+Question 7:
+The Big O value for counting sort is O(n+k)
+n--> The first loop goes through elements in array being sorted and keeps track
+of how many there are of each
+k--> The next loop checks each spot in tracker array for how many of each number
+there is
+n--> Each number is outputted the number of times it occurs
+
+Really O(2n+k) but coefficient is insignificant.
+
+This sorting algorithm is not efficient because in an application in which a set
+of numbers for which the range is not known, the program first has to go through
+the array to determine the range by comparing each number. The range needs to be
+determined since the tracker array needs to have the number of spaces necessary
+within the array.
