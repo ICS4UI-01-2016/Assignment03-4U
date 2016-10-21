@@ -1,0 +1,84 @@
+ 
+
+Q1:
+
+Binary Search:
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+first the code would pick the very middle number in this case 55
+now since we are looking for 41 the code would notice that 41 is smaller
+then 55 so it would eliminate all the numbers to the right of 
+55
+
+23, 27, 30, 34, 41, 51, 55
+
+then it would repeat and find the middle number of the new sequence
+in this case 34 so 41 is larger then 34 so it will eliminate everything to the
+left
+
+41, 51, 55
+
+now it would pick 51 so 41 is smaller so it would eliminate everything to the
+right
+
+41
+
+it would check 41 noticing that it is the right number
+
+Linear Search:
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+This search goes through each number of the array individually so
+it would check 23 no thats not 41
+
+27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+then 27 no thats not 41
+
+30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+then 30 no thats not 41
+
+34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+then it would check 34 no thats not 41
+
+41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+then it would get to 41
+and say thats 41 and output the position 
+
+
+Q2:
+
+25, 30, 20, 80, 40, 60
+
+25, 20, 30, 40, 80, 60
+
+20, 25, 30, 40, 60, 80
+
+Q3: 
+
+So if we had 1, 2, 3, 4, 5, 6, 7 and you were searching for seven 
+
+Comparison 1. First it would take 4 and knowing that 7 is bigger then 4 it 
+would eliminate 4 and every number underneath it leaving 5, 6, 7 
+
+Comparison 2. it would take 6 and knowing that 7 is larger then 6 it would
+eliminate 6 and anything under it leaving just 7 which is your number
+
+Comparison 3. it would take the only number left which is 7 and would say thats 
+the number and it would be done
+
+Q4: 
+
+In a way selection sort could be faster because after its done with position 0 
+its done with it it does not have to keep shuffling and selection has more 
+comparisons. For a big array this could take less time then insertion but on 
+a medium sized array insertion will always be faster.
+
+Q5:
+
+O(1) is the best notation and is the most affective 
