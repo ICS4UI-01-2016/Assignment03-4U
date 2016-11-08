@@ -10,12 +10,16 @@
 public class A3Q7 {
 
     public static void countingSort(int[] n){
+        // make array the size of 101
         int[] tracker = new int[101];
+        // look through the list of numbers
         for(int i = 0; i < n.length; i++){
             int value = n[i];
             tracker[value]++;
         }
+        // set count to 0
         int count = 0;
+        // look through list of possible numbers
         for(int i = 0; i < tracker.length; i++){
             for(int a = 0; tracker[i] > a; a++){
                 n[count] = i;
@@ -27,7 +31,6 @@ public class A3Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         A3Q7 test = new A3Q7();
         int[] n = new int[4];
         n[0] = 3;

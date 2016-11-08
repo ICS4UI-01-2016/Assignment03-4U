@@ -9,7 +9,7 @@
  */
 public class A3Q6 {
 
-    public static void insertionSort(int[] n) {
+    public static void insertionSort(int[] n) {      
         for (int i = 1; i < n.length; i++) {
             int j = i;
             while (j > 0 && n[j] > n[j - 1]) {
@@ -26,7 +26,6 @@ public class A3Q6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         A3Q6 test = new A3Q6();
         int[] n = new int[4];
         n[0] = 3;
