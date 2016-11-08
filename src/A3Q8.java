@@ -10,7 +10,7 @@
 public class A3Q8 {
 
     public static void stringSort(String[] word){
-        // looks through the letters in the world
+        // looks through the letters in the word
         for(int i=0; i<word.length; i++){
             for(int j = i; j > 0 && word[j].compareTo(word[j-1]) < 0; j--){
                 String temp = word[j];
