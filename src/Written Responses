@@ -1,0 +1,142 @@
+Question #1
+
+Linear Search
+
+set number to find to 41
+
+start from the left most number, and ask if the number selected(*) is equal to 41
+if the selected number is not equal to 41, then select the next number to the immediate
+right
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+*
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            *
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 !
+when the number selected is equal to 41, then return the position at which the number 41 was found(in this case it would be 4)
+
+end
+
+
+Binary Search
+
+divide the list of numbers in half to find the "middle" number, then check if the middle number is actually 
+the number we want to find(41). If not, then check if the number(41) is bigger than or smaller than the middle number.
+if it is bigger, then remove the lower half of the numbers in the list, and remove the upper half of the numbers in the list
+if it is smaller.
+
+
+23, 27, 30, 34, 41, 51, ||55  57, 60, 67, 72, 78, 83, 96||
+                        *
+
+23, 27, 30, ||34, 41, 51, 55||
+            *   
+
+41, ||51, 55|| 
+      *
+      
+41
+!
+
+when the number selected is equal to 41, then return the position at which the number was found
+
+
+
+Question #2
+
+Bubble sort
+look at first 2 numbers(from the left) in spots 1 and 2 and check which value is bigger. if the 1st number is bigger then 
+switch the positions of the 2 numbers. Then proceed to increase the spots looked at by one, so the next spots would be 2 and 3.
+again if the 1st number is bigger, then we switch the 2 numbers. Keep repeating this until you reach the end, and then start over 
+from the left side again. when you go through the entire set of numbers without switching anything, end the code
+
+25, 30, 20, 80, 40, 60
+*    *
+
+25, 30, 20, 80, 40, 60
+     !    !
+Switch!
+
+25, 20, 30, 80, 40, 60
+        *   *
+
+25, 20, 30, 80, 40, 60
+            !   !
+Switch!
+
+25, 20, 30, 40, 80, 60
+                !   !
+Switch!
+
+25, 20, 30, 40, 60, 80
+!   !
+Switch!
+
+20, 25, 30, 40, 60, 80
+    *   *
+
+20, 25, 30, 40, 60, 80
+        *   *
+
+20, 25, 30, 40, 60, 80
+            *   *
+
+20, 25, 30, 40, 60, 80
+                *   *
+
+The program would then proceed to recheck all the numbers once more fromm left to right to make sure they are all in order.
+if all numbers are in order then the program ends.
+
+
+Question #3'
+There would be a maximum of 3 steps/lines of explanation needed to perform a binary search on a list of 7 numbers.
+The number of 7 would needed to be divided 3 times in order to be separated down into a single digit.
+
+Lets say the number the program is searching for is 1, so that it is at the start of a list which will be the last number found when
+dividing by 2.
+1, 2, 3, ||4, 5, 6, 7||
+           *
+
+1 ||2, 3||
+    *
+
+1
+!
+
+Therefore after the 3rd step, the program would be left with 1 digit left which would either be the number searched for
+or it wouldn't in which case the program says "the number you asked to find isn't in the list"
+ and ends anyways.
+
+Question #4
+Insertion Sort vs Selection Sort
+Worst case ex. 6 5 4 3 2 1(maximized searching+sorting distance)
+
+In the worst case, selection would be more efficient than insertion sort in terms of number of swaps.
+This is because in the worst case, selection sort has to look for each of the numbers once, but then is able to know exactly where
+the number goes, and swaps once and doesn't have to continue to sort that number. For insertion sort it has to work perform many more steps than selection sort
+in the worst case since farther down the list(to the right) the code might come across the smallest number, and have to sort and swap it all the 
+way back down the list of numbers until it is placed in spot "0". Therefore selection sort would only have to go though the list once,
+and know exactly where the number is to be placed and doesn't have to deal with it anymore, whereas insertion sorts each time as it goes down
+the list, but is indefinite in where all the numbers are to be placed, therefore it needs to keep sorting back to the very beginning of the 
+list if the numbers placed in the worst case scenario.
+
+
+Question #5
+The best Big O value that any search algorithm can be is O(log n). This is because it searches the most efficiently by eliminating
+half of the list each time, which would be much more efficient than linear search using constant time where the code looks at each number
+individually while it goes up the list.
+
+Question #7
+The order of the counting sort written in question 7 is O(n+k), simplified down from 2n + k(since the 2 is fairly irrelevant compared to the final sum).
+This algorithm is less useful than general sorting methods since it can't be used in our case with an unknown number value limit,
+because an array needs to be created that underlines what numbers can potentially be in the list of numbers. Therefore it also 
+is unable to be used in accordance with sorting other objects such as strings.
