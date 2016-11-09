@@ -20,9 +20,13 @@ public class A3Q8 {
             //while j is on the array(bigger than 0), and the position of j-1 in n[] 
             //has a higher case value than j in n[] 
             while (j > 0 && n[j - 1].compareToIgnoreCase(n[j]) > 0) {
+                //set a string variable value at the position of j in the n array
                 String temp = n[j];
+                //set the 2nd position at n to the value of the 1st position in n
                 n[j] = n[j - 1];
+                //set the 1st position at n to the value of the 2nd position in n
                 n[j - 1] = temp;
+                //subtract the variable of j by one
                 j--;
             }
         }
@@ -31,7 +35,7 @@ public class A3Q8 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        String[] strList = {"everyday", "badminton","shuttle" ,"always", };
+        String[] strList = {"aab", "aaa" };
 
         A3Q8 test = new A3Q8();
 
