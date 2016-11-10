@@ -20,15 +20,22 @@ public class A3Q7 {
             // add 1 to the spot on the array that coressponds to temp
             arr[temp]++;
         }
-        
+
+        // variable that stores the spot in n array
         int y = 0;
-        
+
         // loop through arr 
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             // if the spot has more than 0 
-            while(arr[i] > 0){
-                    n[y] = i;
-                    y++;
+            if (arr[i] > 0) {
+                /* replace the current spot in n array with what 
+                   is in the current spot in the tracker array */
+                n[y] = i;
+                // add 1 to y
+                y++;
+                // if there is more than 1 of the number
+                arr[i]--;
+                i--;
             }
         }
         
