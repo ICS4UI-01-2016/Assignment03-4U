@@ -1,0 +1,64 @@
+A3Q1:
+Sequential Search
+0) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+   x
+1) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+       x
+2) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+           x 
+3) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+               x
+4) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                   o
+Binary Search
+0) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                           x
+1) 23, 27, 30, 34, 41, 51 
+           x
+2) 34, 41, 51
+       o
+
+A3Q2:
+0) 25, 30, 20, 80, 40, 60
+
+1) 25, 20, 30, 80, 40, 60
+
+2) 20, 25, 30, 80, 40, 60
+
+3) 20, 25, 30, 40, 80, 60
+
+4) 20, 25, 30, 40, 60, 80
+
+A3Q3:
+Only three comparisons are required because first of all, it looks at the middle
+number in the set and then eliminates half of the set each time until it finds 
+the number. 
+Ex: 7, 5, 8, 3, 6, 2, 4
+             
+1) 7, 5, 8, 3, 6, 2, 4
+            x
+2) 7, 5, 8 
+      x
+3) 7
+   o
+   
+A3Q4:
+Selection sort is faster because insertion sort is only efficient for sorting 
+smaller groups of numbers. Selection sort generally requires less swaps because 
+there is one number that checks through the list to see if it is smaller or 
+bigger than the other numbers. If the number going through the list is bigger 
+than a number in the list then the two numbers swap and the number that got 
+moved to going through the list will take over. If there are no other swaps that 
+are needed to be performed then the number that went through the list will be 
+automatically placed at the correct position.  
+
+A3Q5:
+Binary search is the most efficient in terms of best Big O value because it 
+searches through the middle of the array each time and eliminates half of the 
+set at a time.
+
+A3Q7:
+Counting Sort is not as useful as other sorting algorithms such as selection or 
+insertion sort because it will not be able to sort a list of strings very well 
+as they contain multiple letters that need to be sorted.
+  
