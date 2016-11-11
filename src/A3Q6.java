@@ -9,13 +9,20 @@
  */
 public class A3Q6 {
 
-    public static void insertionSort(int[] n) {      
+    public static void insertionSort(int[] n) {
+        // for loop to put a number on each spot
         for (int i = 1; i < n.length; i++) {
+            // variable to store the change in spot
             int j = i;
+            // main loop for swapping number
             while (j > 0 && n[j] > n[j - 1]) {
+                // temporary variable
                 int temp = n[j];
+                // swaps the first number with the second if it is bigger
                 n[j] = n[j - 1];
+                // first number takes the temp number
                 n[j - 1] = temp;
+                // goes down the list of numbers
                 j--;
             }
         }
@@ -33,7 +40,7 @@ public class A3Q6 {
         n[2] = 4;
         n[3] = 2;
         test.insertionSort(n);
-        for(int i = 0; i < n.length; i++){
+        for (int i = 0; i < n.length; i++) {
             System.out.println(n[i]);
         }
     }

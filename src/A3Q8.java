@@ -10,12 +10,17 @@
 public class A3Q8 {
 
     public static void stringSort(String[] word){
-        // looks through the letters in the word
+        // for loop to put a word on each spot
         for(int i=0; i<word.length; i++){
+            // variable to store the change in spot
             int j = i;
+            // main loop for sawpping words based on their first letter
             while(j > 0 && word[j].compareTo(word[j-1]) < 0){
+                // temporary variable
                 String temp = word[j];
+                // swaps the first word if its first letter comes before the first letter of second word
                 word[j] = word[j-1];
+                // swaps with temp
                 word[j-1] = temp; 
             }
         }

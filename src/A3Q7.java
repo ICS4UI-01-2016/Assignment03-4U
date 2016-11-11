@@ -21,6 +21,7 @@ public class A3Q7 {
         int number = 0;
         // look through list of possible numbers
         for(int i = 0; i < tracker.length; i++){
+            // loop to look through every spot in tracker array
             for(int a = 0; tracker[i] > a; a++){
                 n[number] = i;
                 number++;
