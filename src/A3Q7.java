@@ -17,13 +17,13 @@ public class A3Q7 {
             int value = n[i];
             tracker[value]++;
         }
-        // set count to 0
-        int count = 0;
+        // set number count to 0
+        int number = 0;
         // look through list of possible numbers
         for(int i = 0; i < tracker.length; i++){
             for(int a = 0; tracker[i] > a; a++){
-                n[count] = i;
-                count++;
+                n[number] = i;
+                number++;
             }
         }
     }
