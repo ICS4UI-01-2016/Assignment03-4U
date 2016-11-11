@@ -90,9 +90,10 @@ where numbers swapped? yes
 where numbers swapped? no. therefore done.
 
 A3Q3
+The maximum number of checks to do a binary search when the array has 7 inside of it is 3
 
 A3Q4
-
+They both have the same Big O natation in worst case large arrays.
 A3Q5
-
+O log n. 
 A3Q7

@@ -11,11 +11,11 @@ import java.util.Scanner;
  * @author butlj9437
  */
 public class Problem1 {
-
     /**
-     * @param args the command line arguments
+     * 
+     * @param numbers
+     * @return 
      */
-    
     public int[] revInsert(int[] numbers){
         int[] awnser = new int[numbers.length];
         for(int i=0; i<numbers.length;i++){
