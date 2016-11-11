@@ -1,0 +1,26 @@
+ A3Q1 - The program runs through each number individuallY until it finds 41. 
+            23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 73, 83, 96 - Base list
+            XX, 27, 30, 34, 41, 51, 55, 57, 60, 67, 73, 83, 96 - 23 doesn't equal 41
+            XX, XX, 30, 34, 41, 51, 55, 57, 60, 67, 73, 83, 96 - 27 doesn't equal 41
+            XX, XX, XX, 34, 41, 51, 55, 57, 60, 67, 73, 83, 96 - 30 doesn't equal 41
+            XX, XX, XX, XX, 41, 51, 55, 57, 60, 67, 73, 83, 96 - 34 doesn't equal 41
+            XX, XX, XX, XX, *41*, 51, 55, 57, 60, 67, 73, 83, 96 - ERMAGERD 41 EQUALS 41! 41 IS AT POSITION 5!
+
+        A3Q2 - The program searches for the number though binary methods.
+            23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 73, 83, 96 - Base list
+            23, 27, 30, 34, 41, 51, XX, XX, XX, XX, XX, XX, XX - 55 is more than 41, and since this is in order we can remove 55 asnd everything after it.
+            XX, XX, XX, 34, 41, 51, XX, XX, XX, XX, XX, XX, XX - 30 is less than 41, and thus everything before it can be removed.
+            XX, XX, XX, 34, *41*, 51, XX, XX, XX, XX, XX, XX, XX - 41 is 41! WOW. 41 is at position 5... still.
+
+        A3Q3 - A list of 7 integers can have a maximum of 3 comparisons.
+        The list can only be cut in half twice, meaning that there is only three comparisons (the last one being comparing the number you're looking for).
+            1, 2, 3, 4, 5, 6, 7 - Base example list.
+            X, X, X, X, 5, 6, 7 - 7 is more than 4, thus everything prior to and including 4 may be removed
+            X, X, X, X, X, X, 7 - 6 is less than 4, so everything before and including 6 may be eliminated.
+            X, X, X, X, X, X, 7 - We found 7 in the 7th position. That took 3 comparisons.
+
+        A3Q4 - Insertion Sort takes far longer for large arrays, due to the large number of comparisons. Insertion Sort will still have to make comparisons on array positions that are already sorted. 
+        Selection sort will not do this, and thus shouldn't take as long to run/sort large arrays.
+
+
+        A3Q5 - O(1) is the fastest runtime in existence, and runs in real time. At this point though, O(log n) is the fastest we can do now..
