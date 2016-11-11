@@ -1,0 +1,84 @@
+use brackets to show what number the computer is selecting
+
+Question 1:
+Sequential Search:
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Check spot 1 in the array
+
+(23), 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Check spot 2 in the array
+
+23, (27), 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Check spot 3 in the array
+
+23, 27, (30), 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Check spot 4 in the array
+
+23, 27, 30, (34), 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Check spot 5 in the array
+
+23, 27, 30, 34, (41), 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+41 is in spot 5 of the array
+
+Binary Search: 
+there is 13 array positions
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+s                           m                        e
+the mid position is 57 which is higher than 41, so move the end position 1 below it
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+s           m           e
+the mid positions is 34 which is less than 41, so move the start position 1 spot below it
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                s   m   e
+the mid position is 51 which is greater than 41, so move the end position 1 spot below it
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+               s,m,e
+start, middle, and end are all spot 5, therefore 41 is in spot 5
+
+Question 2:
+there is 5 array positions
+ 25  30  20  80  40  60
+inspect the first two positions
+ [25  30]  20  80  40  60
+25 is smaller than 30 so keep them in the same spot, and move to the next 2
+ 25  [30  20]  80  40  60
+30 is larger than 20 so switch spots, and move to the next 2
+ 25  20  [30  80]  40  60
+30 is smaller than 80 so keep them the same spot, move to the next 2
+ 25  20  30  [80  40]  60
+80 is larger than 40 so switch spots, move to the next 2
+ 25  20  30  40  [80  60]
+80 is larger than 60 so switch spots, 80 is now sorted, go back to the start
+ [25  20]  30  40  60  80 
+25 is larger than 20 so switch spots, move to the next 2
+ 20  25  30  40  60  80 
+the program will continue to check each 2 spots and not move any because it is now sorted
+it will run through one more time after to make sure no numbers are out of order
+
+question 3:
+1) 1,2,3,4,5,6,7
+2)1,2,3
+3)1
+
+The maximum amount of times it will compare for binary search is 3
+
+question 4:
+Selection sort in large arrays would be faster than insertion sort. In Insertion
+sort, numbers that are side by side are only being compared, where as in 
+selection sort, one number is being compared to every number in the array. This 
+can move multiple spots into closer to the spot they should be but insertion sort
+only sorts one spot at a time.
+
+Question 5: O(1) is the best value that a search algorithm can be because it can 
+searches at a constant time for each array index. No matter what it is searching, 
+the time will remain constant and be the fastest
