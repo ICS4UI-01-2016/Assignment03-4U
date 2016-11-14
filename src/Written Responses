@@ -1,0 +1,102 @@
+Question 1:
+
+Sequential Search
+- These are the numbers in the array
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program will the go through each number in the array until it finds the target number
+27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program has then found the target number and the spot it is in in the array
+
+Binary Search
+- These are the numbers in the array
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+- The program will first look at the number in the middle (14/2 = 7), so the 7th number
+23, 27, 30, 34, 41, 51, 55, "57", 60, 67, 72, 78, 83, 96
+(00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13)
+
+- Since the target number is smaller than that, it will do the search again in 
+the earlier half of the array, taking out the middle number
+23, 27, 30, 34, 41, 51, 55
+
+- The program will then conduct the same search with those numbers and find the middle number
+- Since the target number is higher than the current middle one, the program will conduct the search
+again between the new restrictions
+41, 51, 55
+
+- After the search is conducted again with those three numbers, it will identify
+that there is only one spot in the array that it has not ruled out. This will be 
+the target number. It will then return the position it has in the array
+
+Question 2:
+- The array is entered into the program
+ 25  30  20  80  40  60
+
+- The program with then compare the first two numbers in the array to see which 
+one is larger
+ "25  30"  20  80  40  60
+
+- Since the second number is larger, the numbers stay in their original position.
+
+- The program will then compare the previous larger number (30), and the next
+number in the array
+ 25  "30  20"  80  40  60
+
+- Since the first number is larger, these two numbers will switch positions
+ 25  "30  20"  80  40  60
+ 25  "20  30"  80  40  60
+
+- When the program reaches, the end of the array, it will go through the cycle again
+
+- The program will then continue this process until it can't swap number 
+positions anymore (numbers are in least to greatest order)
+ 25  20  30  "80  40"  60
+ 25  20  30  40  "80  60"
+ "25  20"  30  40  60  80
+ 20  25  30  80  40  60
+
+Question 3:
+- Binary search takes the middle number and compares it to the target number
+
+- There are seven numbers, one of them being the target number. For this example,
+let's assume that the numbers scale from 1 to 7
+ 1  2  3  4  5  6  7
+Also, lets assume our target number is 3
+ 1  2  "3"  4  5  6  7
+
+- Since we are using binary search, the program will immediately start looking
+from the middle number, which in this case is 4
+ 1  2  3  "4"  5  6  7
+
+- Our target number is less than the middle number, so the program will then
+take every number less than the middle number (4) and conduct the same search.
+ 1  2  3
+
+- It will then take the middle number again (2) and see if it is the target number.
+ 1  "2"  3
+
+- Since it isn't, There is only one number left that can possible be the answer.
+ 3
+
+- This leaves the program only needing two comparisons to find the target number
+for seven numbers in the array.
+
+Question 4:
+Yes, it would be because selection sort will search the entire array until it
+can identify the lowest number and then it will put that number into the earliest
+spot in the array that it can. This is better than insertion sort for long arrays
+because with insertion sort, it can easily confuse numbers as already being in
+the correct spot and in a long array, it would most likely do this a lot, taking
+up much more time than a selection sort method would.
+
+Question 5: 
+The best Big O value that a search algorithm can have is O(log n), which is
+binary search. This is because this can eliminate huge chunks out of the array
+multiple times at a fast rate, making the whole process to find the target
+number much more efficient. 
+
