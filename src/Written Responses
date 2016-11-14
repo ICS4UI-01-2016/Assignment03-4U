@@ -87,5 +87,16 @@ take every number less than the middle number (4) and conduct the same search.
 for seven numbers in the array.
 
 Question 4:
-No, it is not faster because selection sort will  
+Yes, it would be because selection sort will search the entire array until it
+can identify the lowest number and then it will put that number into the earliest
+spot in the array that it can. This is better than insertion sort for long arrays
+because with insertion sort, it can easily confuse numbers as already being in
+the correct spot and in a long array, it would most likely do this a lot, taking
+up much more time than a selection sort method would.
+
+Question 5: 
+The best Big O value that a search algorithm can have is O(log n), which is
+binary search. This is because this can eliminate huge chunks out of the array
+multiple times at a fast rate, making the whole process to find the target
+number much more efficient. 
 
