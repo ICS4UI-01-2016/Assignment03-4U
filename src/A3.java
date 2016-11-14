@@ -50,15 +50,17 @@ public class A3 {
     }
     //created a method that takes in one array of strings (words)
     public void Alphabet(String[] w){
-        for(int i = 0; i < w.length; i++){
-            //checks to see if one word should be in front of another and 
-            //switches the locations in the array if necessary
-            if(w[i].compareToIgnoreCase(w[i+1]) > 0){
-                String temp = w[i];
-                w[i] = w[i+1];
-                w[i+1] = temp;
-            }
+        for(int p = 0; p < w.length; p++){
+            for(int i = 0; i < w.length-1; i++){
+                //checks to see if one word should be in front of another and 
+                //switches the locations in the array if necessary
+                if(w[i].compareToIgnoreCase(w[i+1]) > 0){
+                    String temp = w[i];
+                    w[i] = w[i+1];
+                    w[i+1] = temp;
+                }
             
+            }
         }
     }
 
@@ -66,12 +68,12 @@ public class A3 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         A3 test = new A3();
-//        int[] n = {2, 1, 5, 8, 1, 7, 10, 6};
-//        test.Insertion(n);
-//
-//        for (int i = 0; i < n.length; i++) {
-//            System.out.println(n[i]);
-//        }
+        int[] n = {2, 1, 5, 8, 1, 7, 10, 6};
+        test.Insertion(n);
+
+        for (int i = 0; i < n.length; i++) {
+            System.out.println(n[i]);
+        }
         
         int[] h = new int[50];
         for (int p = 0; p < h.length; p++){
@@ -87,6 +89,11 @@ public class A3 {
         System.out.println("Enter " + w.length + " words please.");
         for(int g = 0; g < w.length; g++){
             w[g] = input.nextLine();
+        }
+        test.Alphabet(w);
+        
+        for(int k = 0; k < w.length; k++){
+            System.out.println(w[k]);
         }
         
 
