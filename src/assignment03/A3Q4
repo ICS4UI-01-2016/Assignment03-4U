@@ -1,0 +1,3 @@
+In large arrays, and in the worst case, Selection Sort is still slower than 
+Insertion Sort because in Selection Sort, you would still have to go back and 
+check all the numbers after you go through it all
