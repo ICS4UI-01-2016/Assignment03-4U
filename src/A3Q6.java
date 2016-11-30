@@ -30,7 +30,7 @@ public class A3Q6 {
         
         //Make the array 
         A3Q6 sort = new A3Q6();
-        int[] n = {5, 6, 34, 29, 34, 87, 1, 9};
+        int[] n = {5, 6, 34, 29, 39, 87, 1, 9};
         sort.insertionSort(n);
         for(int i = 0; i < n.length; i++){
              System.out.println(n[i]);
