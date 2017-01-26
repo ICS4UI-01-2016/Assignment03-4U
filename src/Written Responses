@@ -1,0 +1,160 @@
+A3Q1
+
+This is the array: 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Sequential Search:
+Start at the first number, which is 23. This is position 0. 
+
+23 does not equal 41. It moves to position 1.
+
+27 is in position 1. 27 does not equal 41. It moves to position 2. 
+
+30 is in position 2. 30 does not equal 41. It moves to position 3.
+
+34 is in position 3. 34 does not equal 41. It moves to position 4.
+
+41 is in the fourth position. 41 does equal 41.
+
+The program tells the user that it found the number 41 in position 4.
+
+
+Binary Search:
+
+This is the array: 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Start by calculating the middle position in the array, which is the end plus the start divided by 2. 
+
+The middle position is 7, which holds the number 57.
+
+This is not the middle number, so it it checks if it is lower or higher than the number we want to 
+find.
+
+Since the number we are looking for is less than 51, we search all the numbers left of 51.
+
+The numbers to the left of the middle number are 23, 27, 30, 34, 41, 51
+
+Calculates the middle position which is position 2, which holds the number 30.
+
+Since 41 is greater than 30, the array splits in half and the program searches the right side. 
+
+Calculates the middle position which is position 1, which holds the number 41.
+
+The program has found the number 41, so it returns it to the user and its position. 
+
+
+A3Q2
+
+This is the array: 25  30  20  80  40  60
+
+The program starts with the first two numbers which are 25 and 30. 
+
+20 is not bigger than 30, so nothing is swapped.  
+
+The next pair of numbers are 30 and 20.
+
+30 is bigger than 20, so it swaps the two. 
+
+The array is now 25, 20, 30, 80, 40, 60
+
+The next pair of numbers are 30 and 80.
+
+30 is not bigger than 80, so nothing is swapped.
+
+The next pair of numbers are 80 and 40.
+
+80 is bigger than 40, so it swaps the two.
+
+The array is now 25, 20, 30, 40, 80, 60
+
+The next pair of numbers are 80 and 60.
+
+80 is bigger than 60, so it swaps the two.
+
+The array is now 25, 20, 30, 40, 60, 80
+
+It has reached the end of the array so it starts over.
+
+The first two numbers are 25 and 20. 
+
+25 is bigger than 20, so it swaps the two.
+
+The array is now 20, 25, 30, 40, 60, 80
+
+The next pair of numbers are 25 and 30.
+
+25 is not bigger than 30, so nothing is swapped.
+
+The next pair of numbers are 30 and 40.
+
+30 is not bigger than 40, so nothing is swapped.
+
+The next pair of numbers are 40 and 60.
+
+40 is not bigger than 60, so nothing is swapped.
+
+The next pair of numbers are 60 and 80.
+
+60 is not bigger than 80, so nothing is swapped.
+
+It has reached end of the array so it starts over. 
+
+It finds that everything is swapped.
+
+It returns that the array is sorted and returns the array, which is 20, 25, 30, 40, 60, 80.
+
+
+A3Q3
+
+There would only be a maximum of three comparisons needed to be perform a binary search on a set of 7
+numbers. 
+
+Say there was an already sorted list of 7 numbers: 34, 38, 48, 62, 69, 78, 92
+
+The program was told to find the number 48.
+
+The program would start by calculating the middle position of the array. 
+
+The middle position holds the number 62. The number the program is looking for is smaller than the 
+number we found so we look in the left half of the array. 
+
+This would be the first comparison.
+
+The program then detects that there are 3 numbers in the left half of the array.
+
+It calculates the middle position, which holds the number 38. The number the program is looking for
+is greater than the number we found, so we look to the right side of the number we found but not 
+including the number we found before or any after that.
+
+This was the second comparison. 
+
+The program finds there is only one number, so it checks that number. 
+
+It finds the number is 48, the number we are looking for. 
+
+This is the third comparison.
+
+The program then returns that it found the number and what position it is in.
+
+Therefore, there can only be three comparisons because there are only 3 possible numbers on 
+either side of the first middle number, and 1 on the other side of the middle number that is 
+calculated of those three numbers. Therefore, the correct number in a set of 7 numbers that
+has the maximum of comparisons done is always either at either end of the array, or n either side
+of the first middle number.
+
+
+
+A3Q4
+
+Selection sort would be better for insertion sort in the case of time because if
+there were a very long array and numbers needed to be swapped a lot, insertion sort would take 
+a much longer time swapping each of the numbers.
+
+
+A3Q5
+
+
+ 
+
+
+
+
