@@ -12,13 +12,13 @@ public class A3Q6 {
     public void insertionSort(int[] n){
    for(int i = 1; i < n.length; i++)
    {
-      int j = i;
-      while(j>0 && n[j-1] < n[j])
+      int x= i;
+      while(x>0 && n[x-1] < n[x])
       {
-         int temp = n[j];
-         n[j] = n[j-1];
-         n[j-1] = temp;
-         j--;
+         int temp = n[x];
+         n[x] = n[x-1];
+         n[x-1] = temp;
+         x--;
       }
    }
 }
